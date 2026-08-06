@@ -24,7 +24,7 @@ div h2, div h3{
 
 * {
     font-size: 24px;
-    color: black; /* Este cambio no se haria ya que css le da prioridad a lo que esta antes */
+    /* color: black; */ /* Este cambio no se haria ya que css le da prioridad a lo que esta antes */
 }
 
 /* Hexadecimal
@@ -50,8 +50,121 @@ div h2, div h3{
 .margen{
     background-color: chocolate;
     margin: 15px 20px 25px 30px; /* margin: arriba | derecha | abajo | izquierda */
+    padding: 30px 25px 25px 25px; /* margen dentro del elemento */
+    border: solid 10px black;
+    height: 100px;
+    width: 100px;
+    overflow: hidden; /* como se ve el texto dentro del background
+                        hay varios tipos como hidden (que es), scroll (que es), y una mas*/
+    outline: 2px solid red;
+}
 
+.text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-decoration: overline;
+    text-shadow: 3px 5px 5px blue; /* desplazamiento horizontal | desplazamiento vertical | desenfoque | color */    
+}
+
+/* 4 posibles estados de links que hay, el orden importa */
+
+a:link{
+    color: blueviolet;
+}
+
+a:visited{
+    color: gray;
+}
+
+a:hover{
+    color: yellow;
+}
+
+a:active{
+    color: red;
+}
+
+ul{
+    background-color: cyan;
+    list-style: circle;
+    /* padding-left: 0px; */
+    /* list-style-position: inside; */
+}
+
+table{
+    width: 300px;
+    border-collapse: collapse; /* esto elimina la separacion entre cada celda*/
+}
+
+th, td{
+    border: solid 1px;
+    padding: 5px;
+}
+
+th{
+    background-color: black;
+    color: white;
+    opacity: 0.7;
+    text-align:left;
+}
+
+tr:nth-child(even){ /* odd: para las filas pares, even: para las filas impares */
+    background-color: green;
+}
+
+tr:hover{
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+span{
+    display: block; /* ocupa todo el ancho disponible y empieza en una nueva linea */
+    /* display: none; */ /* oculta elementos */
+    max-width: 500px; /* ancho maximo */
+    background-color: blueviolet;
+}
+
+.inline{
+    display: inline; /* los elementos estan en la misma lineas */
 }
 
 
+#position{
+    position: sticky;
+    left: 20px;
+    top: 20px;    
+}
 
+.left{
+    float: left;
+    width: 500px;
+    height: 100px;
+}
+
+.right{
+    float: right;
+}
+
+.contanier{
+    height: 200px;
+}
+
+
+.column{
+    margin: 0;
+    padding: 10px 0;
+    width: 33.3%;
+}
+
+.inline-block{
+    display: inline-block;
+    height: 55px;
+    background-color: red;
+}
+
+.center{
+    text-align: center;
+    width: 200px;
+    margin: 0 auto; /* 0 --> Arriba y abajo | auto --> izq. derecha.*/
+    background-color: aqua;
+}
