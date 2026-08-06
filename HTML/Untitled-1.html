@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Puto</title>
+
+    <!-- Un poco de css en html, aplico este estilo a esas etiquetas -->
+    <style>
+        table, th, td {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Titulos -->
+    <h1>Hola h1</h1>
+    <h2>Como estas? h2</h2>
+    <h3>bien, gracias h3</h3>
+    <h4>chau h4</h4>
+    <h5>chau h5</h5>
+    <h6>holaaaaa h6</h6>
+
+    <!-- Parrafo -->
+    <p>puto el que lee</p>
+
+    <p>
+        esto es un <span style="color:green">texto un poco</span> <br> mas largo.
+    </p>
+
+    <!-- esto es un comentario -->
+
+    <a target="_blank" href="https://www.google.com/">ir a google</a>
+    <br>
+    <br>
+    <img src="C:\Users\joaco\Downloads\PORTADA-LINKEDIN3-insigna2025--.jpg" width="500px" height="100px" alt="imagen_grupo_tesys">
+
+    <!-- Formulario -->
+    <form action="/formulario" method="post">
+
+        <!-- Usuario -->
+        <label for="Usuario">Usuario</label>
+        <input type="text" name="Usuario" id="Usuario" placeholder="Usuario">
+        <br>
+
+        <!-- Contraseña -->
+        <label for="Contrasenia">Contrasenia</label>
+        <input type="password" name="Contrasenia" id="Contrasenia" placeholder="Contrasenia">
+        <br>
+        <br>
+
+        <!-- Campo de texto -->
+        <textarea rows="10px" cols="50px" name="comentario" id="comentario" placeholder="comentarios adicionales...">Este es un valor por defecto...</textarea>
+        <br>
+
+        <!-- Diferentes tipos de botones -->
+        <button type="button"><img src="C:\Users\joaco\Downloads\PORTADA-LINKEDIN3-insigna2025--.jpg" alt=""></button>
+        <br>
+        <button type="submit">Iniciar Sesion</button>
+        <br> 
+        <button type="reset">Reiniciar</button>        
+    </form>
+
+    <!-- ul es lista en items -->
+    <ul>
+        <li>elemento 1</li>
+        <li>elemento 2</li>
+        <li>elemento 3</li>
+    </ul>
+
+    <!-- ol es lista ordenada -->
+    <ol>
+        <li value="10">elemento</li>
+        <li>elemento</li>
+
+    <!-- Lista anidada: una lista dentro de un elemento de otra lista -->
+       <li>elemento
+            <ol>
+                <li style="list-style-type: lower-roman;">subelemento1</li>
+                <li style="list-style-type: lower-alpha;">subelemento1</li>
+                <li style="list-style-type: lower-alpha;">subelemento1</li>
+            </ol>
+        </li>
+    </ol>
+
+    <!-- Tablas -->
+    <table style="width: 500px;"> <!-- Le damos un ancho a la tabla-->
+
+        <!-- thead: encabezado de la tabla / tbody: cuerpo de la tabla -->
+
+        <!-- tr: Filas / th: Encabezado / td: celda de datos -->
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alafajor</td>
+                <td>$10</td>
+                <td>100 gr</td>
+            </tr>
+            <tr>
+                <td>Yerba</td>
+                <td>$20</td>
+                <td>1Kg</td>
+            </tr>
+        </tbody>
+
+    <tfoot>
+        <td>TOTAL:</td>
+        <td>$30</td>
+    </tfoot>
+    </table>
+
+</body>
+
+</html>

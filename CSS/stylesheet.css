@@ -1,0 +1,57 @@
+/* Cuando es un id se usa el simbolo # */
+
+#titulo{
+    color: red;
+}
+
+/* todos los parrafos que contengan en su clase la palabra texto */
+
+p.texto{ 
+    color:green;
+}
+
+p.diferente{ 
+    color:blue;
+}
+
+div p {
+    color:green
+}
+
+div h2, div h3{
+    color: brown;
+}
+
+* {
+    font-size: 24px;
+    color: black; /* Este cambio no se haria ya que css le da prioridad a lo que esta antes */
+}
+
+/* Hexadecimal
+.color {
+    color: #ff0000;
+}
+*/
+
+.color{
+    border: 5px black solid;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 5px;
+}
+
+#fondo{
+    background-color: #f88290;
+    /* opacity: 0.5; */
+    background-image: url("CSS\imagen.jpg");
+}
+
+.margen{
+    background-color: chocolate;
+    margin: 15px 20px 25px 30px; /* margin: arriba | derecha | abajo | izquierda */
+
+}
+
+
+
