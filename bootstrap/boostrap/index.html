@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        <h2>Clases auxiliares (Helper Classes)</h2>
+
+        <!-- Ejemplo de Pull left y Pull right en botones -->
+        <div class="clearfix">
+            <button type="button" class="btn btn-default pull-left">Botón 1 (Izquierda)</button>
+            <button type="button" class="btn btn-primary pull-right">Botón 2 (Derecha)</button>
+        </div>
+
+        <br>
+
+        <!-- Ejemplo de contenedor con medidas y centrado con center-block -->
+        <div class="bg-success" style="width: 300px; padding: 15px;" class="center-block">
+            Este es un contenedor con ancho fijo de 300px centrado con la clase center-block.
+        </div>
+
+        <br>
+
+        <!-- Ejemplo de clases para mostrar, ocultar y lectores de pantalla -->
+        <div class="row">
+            <!-- Este bloque se oculta completamente con hidden -->
+            <div class="col-md-4 hidden">
+                <p>Este texto está oculto (hidden).</p>
+            </div>
+
+            <!-- Este bloque se muestra con show -->
+            <div class="col-md-4 show">
+                <p>Este texto se muestra (show).</p>
+            </div>
+
+            <!-- Texto visible solo para lectores de pantalla con sr-only -->
+            <div class="col-md-4">
+                <a href="#" class="sr-only">Visitar artículo (Solo para lectores de pantalla)</a>
+                <p>Texto normal visible en pantalla.</p>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    
+    <!-- Imagenes -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Columna 1: Imagen adaptable (responsive) -->
+            <div class="col-md-2">
+                <img src="https://copaargentina.s3.amazonaws.com/images/m117597_crop11015_2048x2048_proportional_17171065470437.jpg" class="img-responsive" alt="Imagen responsive" style="max-width: 200px;">
+            </div>
+
+            <!-- Columna 2: Clases de estilo (esquinas redondeadas) -->
+            <div class="col-md-2">
+                <img src="https://copaargentina.s3.amazonaws.com/images/m117597_crop11015_2048x2048_proportional_17171065470437.jpg" class="img-rounded" alt="Esquinas redondeadas" style="max-width: 200px;">
+            </div>
+
+            <!-- Columna 3: Imagen circular -->
+            <div class="col-md-2">
+                <img src="https://copaargentina.s3.amazonaws.com/images/m117597_crop11015_2048x2048_proportional_17171065470437.jpg" class="img-circle" alt="Imagen circular" style="max-width: 200px;">
+            </div>
+
+            <!-- Columna 4: Imagen miniatura con borde -->
+            <div class="col-md-2">
+                <img src="https://copaargentina.s3.amazonaws.com/images/m117597_crop11015_2048x2048_proportional_17171065470437.jpg" class="img-thumbnail" alt="Imagen miniatura con borde" style="max-width: 200px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Botones normales -->
+    <button type="button" class="btn btn-default">Default</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-link">Link</button>
+
+    <!-- Elementos ancla links simulando botones -->
+    <a href="#" class="btn btn-default" role="button">Default</a>
+    <a href="#" class="btn btn-primary" role="button">Primary</a>
+    <a href="#" class="btn btn-success" role="button">Success</a>
+    <a href="#" class="btn btn-info" role="button">Info</a>
+    <a href="#" class="btn btn-warning" role="button">Warning</a>
+    <a href="#" class="btn btn-danger" role="button">Danger</a>
+    <a href="#" class="btn btn-link" role="button">Link</a>
+
+    <!-- Tamaños de botones -->
+    <button type="button" class="btn btn-primary btn-lg">Large button</button>
+    <button type="button" class="btn btn-primary">Default button</button>
+    <button type="button" class="btn btn-primary btn-sm">Small button</button>
+    <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
+
+    <!-- Botones de bloque -->
+    <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+    <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+
+    <!-- Botones con clase active y estado disabled -->
+    <button type="button" class="btn btn-primary btn-lg active" role="button">Primary button</button>
+    <button type="button" class="btn btn-default btn-lg active" role="button">Button</button>
+    <button type="button" class="btn btn-primary btn-lg" disabled="disabled">Primary button</button>
+    <button type="button" class="btn btn-default btn-lg" disabled="disabled">Button</button>
+
+    <!-- Tipos de formularios (Formulario horizontal / form-horizontal) -->
+
+    <div class="container">
+    <br>
+        <form action="" class="">
+            <fieldset>
+                <!-- Campo con estado de éxito -->
+                <div class="form-group has-success">
+                    <label for="nombre">Nombre (Éxito):</label>
+                    <input class="form-control" id="nombre" type="text" placeholder="Nombre:">
+                </div>
+                
+                <!-- Campo con estado de advertencia -->
+                <div class="form-group has-warning">
+                    <label for="option">Elige una opción (Advertencia):</label>
+                    <select class="form-control" name="" id="option">
+                        <option value="">Opción #1</option>
+                        <option value="">Opción #2</option>
+                    </select>
+                </div>
+
+                <!-- Campo con estado de error -->
+                <div class="form-group has-error">
+                    <label for="mensaje">Mensaje (Error):</label>
+                    <textarea class="form-control" id="mensaje" placeholder="Escribe tu mensaje:"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="archivo">Archivo:</label>
+                    <input class="form-control" type="file" id="archivo">
+                    <p class="help-block">Maximo 50MB</p>
+                </div>
+
+                <!-- Checkboxes en línea (checkbox-inline) -->
+                <div class="form-group">
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+                    </label>
+                </div>
+
+                <button class="btn btn-primary">Enviar</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <br>
+
+    <div class="container">
+    <br>
+        <form action="" class="form-horizontal">
+            <div class="form-group">
+                <label class="control-label col-md-2" for="nombre">Nombre:</label>
+                <div class="col-md-10">
+                    <input class="form-control" id="nombre" type="text" placeholder="Nombre:">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2" for="correo">Correo:</label>
+                <div class="col-md-10">
+                    <div class="input-group">
+                        <div class="input-group-addon">@</div>
+                        <input class="form-control" id="correo" type="text" placeholder="Correo:">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-10 col-md-offset-2">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="" id="" disabled> Recuerdame
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-10 col-md-offset-2">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <br>
+
+    <!-- Tabla -->
+
+    <div class="container">
+        <div class="table-responsive">
+             <table class="table table-bordered table-hover">
+                <tr class="active danger">
+                    <th>#id</th>
+                    <th>Nombre</th>
+                    <th>Usuario</th>        
+                </tr>
+
+                <tr class="">
+                    <td>1</td>
+                    <td>Nombre 1</td>
+                    <td>Username 1</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Nombre 2</td>
+                    <td>Username 2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Nombre 3</td>
+                    <td>Username 3</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+
+    <div class="container-fluid">
+        <h1 class="text-muted"> Este es un header h1 <small>Texto secundario</small> </h1> 
+        <h2 class="text-primary"> Este es un header h2 <small>Texto secundario</small> </h2> 
+        <h3 class="text-muted"> Este es un header h3 <small>Texto secundario</small> </h3> 
+        <h4 class="text-info"> Este es un header h4 <small>Texto secundario</small> </h4> 
+        <h5 class="text-waring"> Este es un header h5 <small>Texto secundario</small></h5> 
+        <h6 class="text-danger"> Este es un header h6 <small>Texto secundario</small></h6> 
+
+        <h1 class="bg-primary"> Este es un header h1 <small>Texto secundario</small> </h1> 
+        <h2 class="bg-success"> Este es un header h2 <small>Texto secundario</small> </h2> 
+        <h3 class="bg-info"> Este es un header h3 <small>Texto secundario</small> </h3> 
+        <h4 class="bg-waring"> Este es un header h4 <small>Texto secundario</small> </h4> 
+        <h5 class="bg-danger"> Este es un header h5 <small>Texto secundario</small> </h5> 
+    </div>
+
+    <div class="container-fluid"> 
+        <p class="lead"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis adipisci, officia odio neque dolore voluptas mollitia, </p> 
+
+        <p> <s> Perspiciatis, qui? </s> </p> 
+
+        <p> <mark> magni, nemo ex nam quis ipsum est ducimus voluptatibus repellat excepturi. Perspiciatis, qui? </mark> </p> 
+
+        <p> <ins> magni, nemo ex nam quis ipsum est ducimus voluptatibus repellat excepturi. Perspiciatis, qui? </ins> </p>
+
+        <p> <u> magni, nemo ex nam quis ipsum est ducimus voluptatibus repellat excepturi. Perspiciatis, qui? </u> </p>
+
+        <p> <strong> magni, nemo ex nam quis ipsum est ducimus voluptatibus repellat excepturi. Perspiciatis, qui? </strong> </p>
+
+        <p> <b> magni, nemo ex nam quis ipsum est ducimus voluptatibus repellat excepturi. Perspiciatis, qui? </b> </p> 
+
+        <p> <em> magni, nemo ex nam quis ipsum est ducimus voluptatibus repellat excepturi. Perspiciatis, qui? </em> </p>
+
+        <p class="text-left"> Texto alineado a la izquierda </p> <p class="text-center"> Texto centrado </p> <p class="text-right"> Texto alineado a la derecha </p> 
+
+        <p class="text-justify"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis adipisci, officia odio neque dolore voluptas mollitia. </p> 
+
+        <p class="text-lowercase"> ESTE TEXTO SE CONVIERTE A MINÚSCULAS </p>
+
+        <p class="text-uppercase"> este texto se convierte a mayúsculas </p> 
+        
+        <p class="text-capitalize"> este texto convierte la primera letra de cada palabra </p> 
+    </div> 
+
+    <div class="row">
+        <blockquote class="blockquote-reverse">
+            <p>esto es una cita</p>
+            <footer>Joaquin De Luca <cite title="fuente">en fuente</cite></footer>
+        </blockquote>
+    </div>
+
+    <div class="col-md-4 text-right">
+        <p class="text-capitalize">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius
+        <p class="impression"><code>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</code></p>
+        <p class="impression"><pre> laboris nisi ut aliquip ex ea commodo</pre></p>
+    </div>
+
+
+
+    <div class="container">
+        <section class="row"> <!-- con row agregamos filas-->
+
+        <!-- col-xs = pantallas extra pequeñas | col-sm = pantallas pequeñas | col-md = pantallas medianas | col-lg = pantallas grandes -->
+            <article class="col-xs-12 col-sm-6 col-md-9 col-lg-9"> <!-- columna en pantalla mediana 6 -->
+                <p>
+                    <h3>articulo</h3>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore modi porro aspernatur distinctio assumenda accusamus sit soluta expedita, veritatis, aliquid repellat facilis. Maiores fugiat iusto perspiciatis fugit officiis adipisci cumque.
+                </p>
+            </article>
+            <aside class="col-xs-12 col-sm-6 col-md-3 col-lg-3"> <!-- columna en pantalla mediana 6, 6 + 6 = 12 -->
+                <p>
+                    <h3>aside</h3>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere mollitia incidunt blanditiis quos, qui magni quo minima nulla aspernatur eius nemo deserunt, numquam soluta ut debitis in maiores ad! Dignissimos.
+                </p>
+            </aside>
+        </section>
+
+        <br> <!-- espaciado entre filas -->
+
+        <div class="row">
+            <div class="col-md-3">
+                <h3>columna 3</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sunt dignissimos saepe ex perspiciatis rerum id aut accusamus vitae suscipit distinctio molestias error repudiandae recusandae mollitia debitis natus, accusantium fugiat!
+            </div>
+
+            <div class="color1 col-md-3">
+                <h3>columna 3</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sunt dignissimos saepe ex perspiciatis rerum id aut accusamus vitae suscipit distinctio molestias error repudiandae recusandae mollitia debitis natus, accusantium fugiat!
+            </div>  
+
+            <!-- offset = desplaza la columna hacia la derecha -->
+
+            <div class="col-md-3 col-md-offset-3">
+                <h3>columna 3</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sunt dignissimos saepe ex perspiciatis rerum id aut accusamus vitae suscipit distinctio molestias error repudiandae recusandae mollitia debitis natus, accusantium fugiat!
+            </div>  
+
+        <!--<div class="color1 col-md-3">
+                <h3>columna 3</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sunt dignissimos saepe ex perspiciatis rerum id aut accusamus vitae suscipit distinctio molestias error repudiandae recusandae mollitia debitis natus, accusantium fugiat!
+            </div>  
+        </div> -->
+
+        <!-- clearfix = limpia los floats (flotante) | visible-sm-block = se muestra/aplica en pantallas small -->
+        <!-- <div class="clearfix visible-sm-block"></div> -->
+    </div>
+
+    <footer>
+        <div class="container">
+            <h3>Joaquin De Luca</h3>
+        </div>
+    </footer>
+
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
