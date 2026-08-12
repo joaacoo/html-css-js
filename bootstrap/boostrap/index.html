@@ -9,7 +9,776 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navegacion">
+
+
+    <!-- Slideshow -->
+    <div class="container">
+        <br><br><br>
+
+        <div class="col-md-12">
+            <div id="carrusel-1" class="carousel slide" data-ride="carousel">
+                
+                <!-- Indicadores (todos apuntan a #carrusel-1) -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carrusel-1" data-slide-to="0" class="active"></li>
+                    <li data-target="#carrusel-1" data-slide-to="1"></li>
+                    <li data-target="#carrusel-1" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Contenedor general de los slides (Abierto) -->
+                <div class="carousel-inner" role="listbox">
+                    
+                    <!-- Slide 1 -->
+                    <div class="item active">
+                        <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt="" width="1000" height="300">
+                        <div class="carousel-caption hidden-xs hidden-sm">
+                            <h3>Primer Slide #1</h3>
+                            <p>Esta es la primera slide</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 (Ahora está correctamente dentro de carousel-inner) -->
+                    <div class="item">
+                        <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""  width="1000" height="300">
+                        <div class="carousel-caption hidden-xs hidden-sm">
+                            <h3>Slide #2</h3>
+                            <p>Esta es la segunda slide</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 (También adentro) -->
+                    <div class="item">
+                        <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""  width="1000" height="300">
+                        <div class="carousel-caption hidden-xs hidden-sm">
+                            <h3>Slide #3</h3>
+                            <p>Esta es la tercera slide</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controles (siguente y anterior, apuntan al slide 1) -->
+                <a href="#carrusel-1" class="left carousel-control" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" area-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+
+                <a href="#carrusel-1" class="right carousel-control" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" area-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tabs dinamicas -->
+    <div class="container">
+        <br><br><br>
+        <div class="row">
+            <div class="col-md-5">
+                <!-- Menú de Tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#seccion1" aria-controls="seccion1" role="tab" data-toggle="tab">Sección 1</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#seccion2" aria-controls="seccion2" role="tab" data-toggle="tab">Sección 2</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#seccion3" aria-controls="seccion3" role="tab" data-toggle="tab">Sección 3</a>
+                    </li>
+                </ul>
+
+                <!-- Contenido de las Tabs -->
+                <div class="tab-content">
+                    <!-- Sección 1 (Activa por defecto) -->
+                    <div role="tabpanel" class="tab-pane active" id="seccion1">
+                        <h3>Sección número 1</h3>
+                        <p>Contenido único de la sección 1.</p>
+                    </div>
+
+                    <!-- Sección 2 -->
+                    <div role="tabpanel" class="tab-pane" id="seccion2">
+                        <h3>Sección número 2</h3>
+                        <p>Contenido diferente para la sección 2.</p>
+                    </div>
+
+                    <!-- Sección 3 -->
+                    <div role="tabpanel" class="tab-pane" id="seccion3">
+                        <h3>Sección número 3</h3>
+                        <p>Contenido diferente para la sección 3.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Componenet collapse / acordeón -->
+    <div class="container">
+    <br><br><br>
+
+    <!-- 1. COMPONENTE COLLAPSE SIMPLE -->
+        <a href="#seccion" class="btn btn-primary" data-toggle="collapse"> Mostrar / Ocultar</a>
+
+        <div class="collapse" id="seccion">
+            <br>
+            <div class="well">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Este es un contenido oculto que aparece al presionar el botón.
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- 2. COMPONENTE ACORDEÓN -->
+        <div class="panel-group" id="acordeon" role="tablist">
+            
+            <!-- Panel 1 (Abierto por defecto) -->
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading1">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#acordeon" href="#collapse1">
+                            Encabezado número 1
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse in" role="tabpanel">
+                    <div class="panel-body">
+                        Contenido del panel número 1.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel 2 -->
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading2">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#acordeon" href="#collapse2">
+                            Encabezado número 2
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse" role="tabpanel">
+                    <div class="panel-body">
+                        Contenido del panel número 2.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panel 3 -->
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="heading3">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#acordeon" href="#collapse3">
+                            Encabezado número 3
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse" role="tabpanel">
+                    <div class="panel-body">
+                        Contenido del panel número 3.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-default navbar-fixed-top" id="navegacion" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-collapse">
+                    <span class="sr-only">Mostrar navegación</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Navbar</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="menu-collapse">
+                <ul class="nav navbar-nav" role="tablist">
+                    <li class="active"><a href="#seccion1">Sección número uno</a></li>
+                    <li><a href="#seccion2">Sección número dos</a></li>
+                    <li><a href="#seccion3">Sección número tres</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container main">
+        <div class="row">
+            <div class="col-md-4">
+                
+                <!-- Sección 1 -->
+                <div id="seccion1" class="section">
+                    <h2>Sección 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, reiciendis! Magnam, totam at!</p>
+                </div>
+
+                <br>
+                <!-- Sección 2 -->
+                <div id="seccion2" class="section">
+                    <h2>Sección 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, reiciendis! Magnam, totam at!</p>
+                </div>
+
+                <!-- Sección 3 -->
+                <div id="seccion3" class="section">
+                    <h2>Sección 3</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, reiciendis! Magnam, totam at!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts (jQuery y Bootstrap JS) -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <!-- Ventanas emergentes -->
+    <div class="container">
+    <br>
+        <a href="#ventana1" class="btn btn-primary btn-lg" data-toggle="modal">Boton #1</a>
+        <a href="#ventana2" class="btn btn-success btn-lg" data-toggle="modal">Boton #2</a>
+       
+        <div class="modal fade" id="ventana1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Header de la ventana -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Encabezado de nuestra ventana</h4>
+                    </div>
+
+                    <!-- Contenido de la ventana -->
+                    <div class="modal-body">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto velit iste maiores tenetur saepe nemo officia, molestiae alias earum ullam. Fugiat, laboriosam. Quod assumenda accusamus corporis corrupti explicabo voluptates aliquam.</p>
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="ventana2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Header de la ventana -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Encabezado de nuestra ventana 2</h4>
+                    </div>
+
+                    <!-- Contenido de la ventana -->
+                    <div class="modal-body">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto velit iste maiores tenetur saepe nemo officia, molestiae alias earum ullam. Fugiat, laboriosam. Quod assumenda accusamus corporis corrupti explicabo voluptates aliquam.</p>
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-danger">Resetear Cambios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Paneles -->
+    <div class="container">
+        <br>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="panel panel-default">
+                    <div class="panel-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga quos doloremque minus tempore numquam voluptates. Voluptatum adipisci quam quo excepturi esse voluptate in laborum eligendi, odit, alias expedita quibusdam debitis?</div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Encabezado</div>
+                        <div class="panel-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga quos doloremque minus tempore numquam voluptates. Voluptatum adipisci quam quo excepturi esse voluptate in laborum eligendi, odit, alias expedita quibusdam debitis?</div>
+                </div>
+
+                <div class="panel panel-info">
+                    <div class="panel-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel sint dolorum odio. Rem maiores, magni temporibus deserunt perferendis, nisi sit, modi corporis quibusdam consequuntur commodi veniam iusto veritatis nobis quod?</div>
+                    <div class="panel-footer">Pie de pagina</div>
+                </div>
+
+                <div class="panel panel-primary">
+                    <div class="panel-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel sint dolorum odio. Rem maiores, magni temporibus deserunt perferendis, nisi sit, modi corporis quibusdam consequuntur commodi veniam iusto veritatis nobis quod?</div>
+                    <div class="panel-footer">Pie de pagina</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+    <br>
+        <!-- Fila 1 -->
+        <div class="row">
+            <!-- 1. Ejemplo básico -->
+            <div class="col-md-5">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""></a>
+                    </div>
+                    <div class="media-body">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nam corrupti iste aut sapiente, culpa asperiores cupiditate repellat quam commodi enim praesentium sunt modi quae dicta unde exercitationem consequatur eligendi?</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Ejemplo media-middle -->
+            <div class="col-md-5">
+                <div class="media">
+                    <div class="media-left media-middle">
+                        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""></a>
+                    </div>
+                    <div class="media-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aliquam sit nemo et fuga? Quas sint pariatur sapiente corrupti dolores quaerat maiores ab accusantium nam. Tenetur laborum ex earum dolor.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nostrum harum ipsum? Excepturi vitae voluptas incidunt asperiores, placeat dignissimos corporis autem sequi minus, fuga impedit minima dolore. Nesciunt, iusto nam!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nostrum harum ipsum? Excepturi vitae voluptas incidunt asperiores, placeat dignissimos corporis autem sequi minus, fuga impedit minima dolore. Nesciunt, iusto nam!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <!-- Fila 2 -->
+        <div class="row">
+            <!-- 3. Ejemplo media-bottom -->
+            <div class="col-md-5">
+                <div class="media">
+                    <div class="media-left media-bottom">
+                        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""></a>
+                    </div>
+                    <div class="media-body">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, atque ipsam, dolore quo asperiores possimus quae quis iusto dignissimos consectetur earum error saepe accusamus, corporis deserunt mollitia nihil! Sunt, eius.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, atque ipsam, dolore quo asperiores possimus quae quis iusto dignissimos consectetur earum error saepe accusamus, corporis deserunt mollitia nihil! Sunt, eius.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, atque ipsam, dolore quo asperiores possimus quae quis iusto dignissimos consectetur earum error saepe accusamus, corporis deserunt mollitia nihil! Sunt, eius.</p>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <!-- 4. Ejemplo Anidado -->
+            <div class="col-md-5">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""></a>
+                    </div>
+                    <div class="media-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quidem dolorum inventore mollitia accusantium quisquam quaerat labore nisi voluptatibus, esse sit libero, neque id doloribus dolores quam provident vel ipsum!</p>
+                    
+                        <!-- El segundo media aca adentro del media-body -->
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""></a>
+                            </div>
+                            <div class="media-body">
+                                <p>Esta es la respuesta al comentario.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Grupos de listas -->
+    <div class="container-fluid">
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+               <ul class="list-group">
+                    <li class="list-group-item active">Lorem ipsum <span class="badge">7</span></li>
+                    <li class="list-group-item">Lorem ipsum <span class="badge">10</span></li>
+                    <li class="list-group-item">Lorem ipsum</li>
+                    <li class="list-group-item">Lorem ipsum</li>
+                    <li class="list-group-item">Lorem ipsum</li>
+               </ul> 
+            </div>         
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+               <ul class="list-group">
+                    <li class="list-group-item list-group-item-success">Lorem ipsum <span class="badge">10</span></li>
+                    <li class="list-group-item list-roup-item-warning">Lorem ipsum</li>
+                    <li class="list-group-item list-group-item-info">Lorem ipsum</li>
+                    <li class="list-group-item list-group-item-danger">Lorem ipsum</li>
+               </ul> 
+            </div>         
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+               <ul class="list-group">
+                    <a href="#" class="list-group-item active">Lorem ipsum</a>
+                    <a href="#" class="list-group-item disabled">Lorem ipsum</a>
+                    <a href="#" class="list-group-item">Lorem ipsum</a>
+               </ul> 
+            </div>         
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+               <ul class="list-group">
+                    <a href="#" class="list-group-item active">Lorem ipsum
+                        <h4> Encabezado </h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, quidem unde asperiores natus earum neque soluta vitae nam, excepturi cumque qui iusto odio maxime? Excepturi fuga delectus ipsam eligendi omnis?</p>
+                    </a>     
+
+                    <a href="#" class="list-group-item">Lorem ipsum
+                        <h4> Encabezado </h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, quidem unde asperiores natus earum neque soluta vitae nam, excepturi cumque qui iusto odio maxime? Excepturi fuga delectus ipsam eligendi omnis?</p>
+                    </a>   
+                    
+                    <a href="#" class="list-group-item disabled">Lorem ipsum
+                        <h4> Encabezado </h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, quidem unde asperiores natus earum neque soluta vitae nam, excepturi cumque qui iusto odio maxime? Excepturi fuga delectus ipsam eligendi omnis?</p>
+                    </a> 
+               </ul> 
+            </div>         
+        </div>
+    </div>
+
+    <!-- Barras de progreso -->
+    <div class="container">
+        <br>     
+
+        <!-- 1. Barra de progreso básica con porcentaje -->
+        <h3>Barra básica</h3>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 50%;">
+                50%
+            </div>
+        </div>
+
+        <!-- 2. Barra con ancho mínimo (para que el texto número pequeño no se rompa) -->
+        <h3>Barra con ancho mínimo</h3>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="min-width: 10%; width: 15%;">
+                15%
+            </div>
+        </div>
+
+        <!-- 3. Barras de diferentes colores -->
+        <h3>Barras de colores</h3>
+        
+        <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" style="width: 40%;">
+                Success (Verde)
+            </div>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-info" role="progressbar" style="width: 60%;">
+                Info (Celeste)
+            </div>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-warning" role="progressbar" style="width: 80%;">
+                Warning (Amarillo)
+            </div>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-danger" role="progressbar" style="width: 100%;">
+                Danger (Rojo)
+            </div>
+        </div>
+
+        <!-- 4. Barra con líneas y animación en movimiento -->
+        <h3>Barra con líneas y animación (Striped + Active)</h3>
+        <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" style="width: 70%;">
+                70% Animada
+            </div>
+        </div>
+
+        <!-- 5. Barra combinada (varios colores en una sola barra) -->
+        <h3>Barra combinada</h3>
+        <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" style="width: 30%;">
+                30%
+            </div>
+            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" style="width: 40%;">
+                40%
+            </div>
+            <div class="progress-bar progress-bar-warning" role="progressbar" style="width: 20%;">
+                20%
+            </div>
+        </div>
+    </div>
+
+    <!-- Mensajes de alerta -->
+    <div class="container-fluid">
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="alert alert-success">Esta es nuestra alerta</div>
+                <div class="alert alert-danger">Esta es nuestra alerta</div>
+                <div class="alert alert-info">Esta es nuestra alerta</div>
+                <div class="alert alert-warning">Esta es nuestra alerta</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="alert alert-success">
+                    <button class="close" data-dismiss="alert"><span>&times;</span></button> 
+                    Esto es una <strong>alerta</strong> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Miniaturas -->
+    <div class="container">
+    <br>
+        <div class="row">
+            <div class="col-xs-6 col-md-3"> 
+                <div class="thumbnail">    
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""></a>
+                    <div class="caption">
+                        <h3>Titulo de la foto</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ut consequuntur dolorum nihil vel velit beatae omnis? Molestias possimus excepturi unde quasi quia optio, aspernatur laboriosam quibusdam reiciendis nesciunt pariatur.</p>
+                        <a href="#" class="btn btn-success">Leer mas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""></a>
+            </div>
+            
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""></a>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-6 col-md-3"> 
+                <a href="#" class="thumbnail"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""></a>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""></a>
+            </div>
+            
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""></a>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Encabezado de pagina -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-header">
+                    <h1> Titulo del articulo <small>Sub-texto del titulo</small></h1>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptates explicabo accusantium accusamus ratione aliquam alias veniam beatae minima blanditiis? In architecto perspiciatis labore cum vitae minus, laboriosam vero id?</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Jumbroton -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Hola mundo!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, reiciendis! Magnam, totam at! Ipsam iure autem repellendus saepe beatae officiis. Earum doloribus, eaque quam cumque alias ipsa aliquam iure laboriosam?</p>
+            <p><a href="#" class="btn btn-primary">Leer mas</a></p>
+        </div>
+    </div>
+
+    <!-- Badges Insignias -->
+    <div class="container">
+        <br>
+        <a href="#">Mensajes privados <span class="badge">15</span></a>
+        <br><br>
+        <button class="btn btn-primary"> Mensaje privados <span class="badge">50</span></button>
+        <br><br>
+        <ul class="nav nav-pills">
+            <li class="active"><a href="#"> <span class="badge"> 54 </span> Inicio</a></li>
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#"> <span class="badge"> 14 </span>  Mensajes</a></li>
+
+        </ul>
+    </div>
+
+    <!-- Labels / Etiquetas, diferentes tipos -->
+    <div class="container">
+        <h1>Heeader 1 <span class="label label-default">Nuevo</span></h1>
+        <h2> Header 2 <span class="label label-primary">Nuevo</span></h2>
+        <h3> Header 3 <span class="label label-success">Nuevo</span></h3>
+        <h4> Header 4 <span class="label label-warning">Nuevo</span></h4>
+        <h5> Header 5 <span class="label label-info">Nuevo</span></h5>
+        <h6> Header 6 <span class="label label-danger">Nuevo</span></h6>
+
+        <p>Este es un parrafo <a href="#"><span class="label label-primary">Etiqueta</span></a></p>
+    </div>
+
+    <!-- Paginacion -->
+    <div class="cointariner-fluid">
+        <br>
+        <!-- Paginación Grande -->
+        <nav>
+            <ul class="pagination pagination-lg">
+                <li class="disabled"><a href="#">&laquo;</a></li> <!-- Agrega las flechas del lado izquierdo -->
+                <li class="active"><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href="#">&raquo;</a></li> <!-- Agrega las flechas del lado derecho -->
+            </ul>
+        </nav>
+
+        <br>
+        <!-- Paginación Normal -->
+        <nav>
+            <ul class="pagination">
+                <li class="disabled"><a href="#">&laquo;</a></li> <!-- Agrega las flechas del lado izquierdo -->
+                <li class="active"><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href="#">&raquo;</a></li> <!-- Agrega las flechas del lado derecho -->
+            </ul>
+        </nav>
+
+        <br>
+        <!-- Paginación Pequeña -->
+        <nav>
+            <ul class="pagination pagination-sm">
+                <li class="disabled"><a href="#">&laquo;</a></li> <!-- Agrega las flechas del lado izquierdo -->
+                <li class="active"><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href="#">&raquo;</a></li> <!-- Agrega las flechas del lado derecho -->
+            </ul>
+        </nav>
+
+        <br>
+        <!-- Paginacion anterior / siguiente -->
+        <nav>
+            <ul class="pager">
+                <li class="previous">
+                <a href="#">&larr; Anterior</a>
+                </li>
+                <li class="next">
+                <a href="#">Siguiente &rarr;</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <!-- Migas de pan: indican en qué parte del sitio estás y el camino hasta ella -->
+    <!-- Inicio >> Categoria #1 >> Categoria #2 (donde estoy) -->
+    
+    <div class="container-fluid">
+        <br>
+        <div class="col-md-4">
+            <ol class="breadcrumb">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Categoria #1</a></li>
+                <li class="active">Categoria #2</li>
+            </ol>
+        </div>
+    </div>
+
+    <br><br>
+
+    <!-- Navbars o barras de navegacion -->
+    <div class="container">
+        <br>
+        <nav class="navbar navbar-default navbar-static-top navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
+                        <span class="sr-only">Menu</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand">Inicio</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Item #1</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Item #2 <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Acción 1</a></li>
+                                <li><a href="#">Acción 2</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Acción 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Item #3</a></li>
+                        <li><a href="#">Item #4</a></li>
+                    </ul>
+
+                    <!-- Formulario de búsqueda -->
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Buscar">
+                        </div>
+                    </form>
+
+                    <!-- Elementos alineados a la derecha con Dropdown -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Item #5</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Dropdown <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Acción 1</a></li>
+                                <li><a href="#">Acción 2</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Acción 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
     
     <div class="container">
         <h2>Clases auxiliares (Helper Classes)</h2>
@@ -349,7 +1118,9 @@
     </footer>
 
 
-    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap 3 JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
