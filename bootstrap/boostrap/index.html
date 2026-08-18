@@ -10,6 +10,288 @@
 </head>
 
 <body>
+
+    <!-- Navegaciones -->
+
+
+
+    <!-- Grupos de input -->
+    <div class="container-fluid">
+        <br>
+
+        <!-- 1. Input Group con texto (Addon) a la izquierda -->
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon">Correo</span>
+                <input type="text" class="form-control" placeholder="Escribe tu correo">
+            </div>
+        </div>
+
+        <!-- 2. Input Group con texto (Addon) a ambos lados (Ejemplo de precio con decimales) -->
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon">$</span>
+                <input type="text" class="form-control" placeholder="0.00">
+                <span class="input-group-addon">.00</span>
+            </div>
+        </div>
+
+        <!-- 3. Input Group con Checkbox dentro del Addon -->
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon">
+                    <input type="checkbox" aria-label="...">
+                </span>
+                <input type="text" class="form-control" placeholder="Input con checkbox">
+            </div>
+        </div>
+
+        <!-- 4. Input Group con Radio Button dentro del Addon -->
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon">
+                    <input type="radio" name="radioGroup1" aria-label="...">
+                </span>
+                <input type="text" class="form-control" placeholder="Input con radio button">
+            </div>
+        </div>
+
+        <!-- 5. Input Group con un Botón -->
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-btn">
+                    <button class="btn btn-primary" type="button">Buscar</button>
+                </span>
+                <input type="text" class="form-control" placeholder="Buscar para...">
+            </div>
+        </div>
+
+        <!-- 6. Input Group con un Botón Desplegable (Dropdown) -->
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        Acción <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Acción #1</a></li>
+                        <li><a href="#">Acción #2</a></li>
+                        <li><a href="#">Acción #3</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Acción separada</a></li>
+                    </ul>
+                </div>
+                <input type="text" class="form-control" placeholder="...">
+            </div>
+        </div>
+
+        <!-- 7. Input Group con Split Button Dropdown (Botón dividido con despliegue) -->
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default">Acción</button>
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Acción #1</a></li>
+                        <li><a href="#">Acción #2</a></li>
+                        <li><a href="#">Acción #3</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Acción separada</a></li>
+                    </ul>
+                </div>
+                <input type="text" class="form-control" placeholder="...">
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container">
+    <!-- Dropdown estándar -->
+        <div class="btn-group">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                Botón de acción <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+            </ul>
+        </div>
+
+        <!-- Split Button Dropdown (Dropdown dividido en dos botones) -->
+        <div class="btn-group">
+            <!-- Primer botón con acción independiente -->
+            <button type="button" class="btn btn-default">Acción</button>
+            <!-- Segundo botón que activa el menú desplegable -->
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+        </div>
+
+        <!-- Tamaños de Dropdown Buttons -->
+        <!-- Tamaño Grande (btn-lg) -->
+        <div class="btn-group">
+            <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                Botón Grande <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+            </ul>
+        </div>
+
+        <!-- Tamaño Estándar (Mediano) -->
+        <div class="btn-group">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                Botón Estándar <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+            </ul>
+        </div>
+
+        <!-- Tamaño Pequeño (btn-sm) -->
+        <div class="btn-group">
+            <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                Botón Pequeño <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+            </ul>
+        </div>
+
+        <!-- Dropup (Menú desplegable hacia arriba) -->
+        <div class="btn-group dropup">
+        <br><br><br>
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                Dropup <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Grupo de botones -->
+    <div class="container">
+        <br>
+        <div class="btn-group btn-group-lg">
+            <button class="btn btn-default">Izquierda</button>
+            <button class="btn btn-default">Centro</button>
+            <button class="btn btn-default">Derecha</button>
+        </div>
+
+        <div class="btn-group btn-group-md">
+            <button class="btn btn-default">Izquierda</button>
+            <button class="btn btn-default">Centro</button>
+            <button class="btn btn-default">Derecha</button>
+        </div>
+
+        <br>
+        <div class="btn-group-vertical">
+        <br><br>
+            <button class="btn btn-default">Izquierda</button>
+            <button class="btn btn-default">Centro</button>
+            <button class="btn btn-default">Derecha</button>
+
+            <div class="btn-group-vertical">
+                <button class="btn btn-success dropdown-toggle" type="button" id="dropdownmenu1" data-toggle="dropdown" aria-expanded="true">
+                    <span class="caret"></span> Dropdown
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownmenu1">
+                    <li role="presentation" class="dropdown-header">Encabezado</li>
+                    <li class="divider" class="item"></li>
+                    <li role="presentation"><a role="item" href="">1</a></li>
+                    <li role="presentation" class=""><a role="item" href="">2</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <br><br>
+        <div class="btn-group btn-group-justified">
+            <a href="" class="btn btn-default">1</a>
+            <a href="" class="btn btn-default">2</a>
+            <a href="" class="btn btn-default">3</a>
+        </div>
+    </div>
+
+    <!-- Dropdown -->
+    <div class="container">
+        <br>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownmenu1" data-toggle="dropdown" aria-expanded="true">
+                <span class="glyphicon glyphicon-menu-down"></span> Dropdown
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownmenu1">
+                <li role="presentation" class="dropdown-header">Encabezado</li>
+                <li class="divider" class="item"></li>
+                <li role="presentation"><a role="item" href="">#Item 1</a></li>
+                <li role="presentation" class="disabled"><a role="item" href="">#Item 2</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Iconos -->
+    <div class="container">
+        <h1> <span class="glyphicon glyphicon-adjust"></span> esto es un h1</h1>
+        <button class="btn btn-success"> <span class="glyphicon glyphicon-ok-sign"></span> Guardar</button>
+        <button class="btn btn-primary"><span class="glyphicon glyphicon-ok-sign"></span> Guardar</button>
+    </div>
+
+    <div class="container">
+        <h2>Utilidades Responsive</h2>
+
+        <!-- 1. Clases VISIBLE: Muestran el elemento solo en ciertos tamaños de pantalla -->
+        <div class="alert alert-success visible-lg">
+            Este mensaje solo es visible en pantallas grandes (lg).
+        </div>
+
+        <div class="alert alert-info visible-md">
+            Este mensaje solo es visible en pantallas medianas (md).
+        </div>
+
+        <!-- 2. Clases HIDDEN: Ocultan el elemento en determinados tamaños de pantalla -->
+        <div class="alert alert-warning hidden-xs hidden-sm">
+            Este elemento está oculto en dispositivos extra pequeños (xs) y pequeños (sm).
+        </div>
+
+        <!-- 3. Modificadores de visualización (block, inline, inline-block) con utilidades responsive -->
+        <!-- Un botón que solo es visible en tamaño mediano y se comporta como bloque (block) -->
+        <button type="button" class="btn btn-primary btn-block visible-lg-block">
+            Botón visible solo en mediano y grande (Bloque)
+        </button>
+
+        <!-- Un botón visible en tamaño mediano pero convertido a elemento en línea (inline) -->
+        <button type="button" class="btn btn-success visible-md-inline">
+            Botón visible solo en mediano (En línea)
+        </button>
+
+        <!-- 4. Clases para Impresión (Print Classes) -->
+        <!-- Este elemento se oculta al momento de imprimir (ctrl + p) la página web -->
+        <div class="well hidden-print">
+            <p>Este contenido no aparecerá cuando el usuario imprima la pagina.</p>
+        </div>
+
+        <!-- Este elemento SOLO aparece en el papel al imprimir (ctrl + p) -->
+        <div class="well visible-print-block">
+            <p>Este mensaje exclusivo solo sale impreso en el papel.</p>
+        </div>
+    </div>
+    
     
     <div class="container">
         <h2>Clases auxiliares (Helper Classes)</h2>
@@ -292,7 +574,7 @@
         <p class="impression"><pre> laboris nisi ut aliquip ex ea commodo</pre></p>
     </div>
 
-
+    <br>
 
     <div class="container">
         <section class="row"> <!-- con row agregamos filas-->
@@ -349,7 +631,9 @@
     </footer>
 
 
-    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- jQuery versión 1.12.4 (compatible con Bootstrap 3) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap 3 JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
