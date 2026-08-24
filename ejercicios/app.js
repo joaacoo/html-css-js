@@ -86,9 +86,13 @@ sumbit.addEventListener("click", function() {
 // Ejercicio 4
 const select = document.querySelector(".select")
 
+$(".motivo").hide();
+
 select.addEventListener("change", function() {
-    if (select.value === "Perdido" || select.value === "Rechazado" ){
-        $('.change-resultado').append('<input> ingresa el motivo</input>');
+    if (select.value === "Perdido" || select.value === "Rechazado"){
+        $(".motivo").show();
+    }else{
+        $(".motivo").hide();
     }
 });
 
@@ -198,12 +202,18 @@ let arrayTabla = [];
 const botonEliminar = document.querySelector(".boton-eliminar");
 
 botonEliminar.addEventListener("click", function(){
-    let respuesta = confirm("¿Queres borrar la fila principal o todas las filas?");
+    let respuesta = confirm("¿Queres borrar todas las filas (Aceptar) o todos menos la principal (Cancelar)?");
 
     if(respuesta == true){
-        for (i = 1; i < arrayTabla.length; i++){
+        for (i = 0; i < arrayTabla.length; i++) {
+            arrayTabla[i].remove();
+        }
+
+    arrayTabla = []; // Lo vuelvo a iniciarlizar vacio porque sino quedan elementos en el array, porque remove solo borra html, no en memoria. Con esto funciona lo de borra hasta la fila principal.
+
+    }else{
+        for (i = 1; i < arrayTabla.length; i++) {
             arrayTabla[i].remove();
         }
     }
 });
-
