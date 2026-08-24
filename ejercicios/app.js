@@ -99,6 +99,8 @@ select.addEventListener("change", function() {
 
 // Parte 2 
 
+// Forma: usando js
+
 // Ejercicio 1
 
 const agregarFila = document.querySelector(".agregar-fila");
@@ -218,4 +220,40 @@ botonEliminar.addEventListener("click", function(){
     }
 });
 
+
+// Forma 2: Usando jQuery (version simplificada)
+
+// Ejercicio 1
+const tablaVS = $("#tabla-id-VS");
+const agregarFilaVS = $(".agregar-fila-VS");
+
+agregarFilaVS.on("click", function() {
+
+    $("#tabla-id-VS tbody").append(`
+        <tr class="fila-articulo">
+            <td>
+                <input class="input-articulo">
+            </td>
+            <td>
+                <input class="input-descripcion">
+            </td>
+            <td>
+                <input class="input-cantidad">
+            </td>
+            <td>
+                <input class="input-precio">
+            </td>
+            <td>
+                <input class="input-importe">
+            </td>
+            <td>
+                <button class="boton-eliminar-fila">Eliminar</button>
+            </td>
+        </tr>
+    `);
+});
+
+// Ejercicio 2
+
+const botonEliminarVS = document.querySelector(".boton-eliminar-VS")
 
