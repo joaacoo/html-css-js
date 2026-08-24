@@ -209,7 +209,7 @@ botonEliminar.addEventListener("click", function(){
             arrayTabla[i].remove();
         }
 
-    arrayTabla = []; // Lo vuelvo a iniciarlizar vacio porque sino quedan elementos en el array, porque remove solo borra html, no en memoria. Con esto funciona lo de borra hasta la fila principal.
+        arrayTabla = []; // Lo vuelvo a iniciarlizar vacio porque sino quedan elementos en el array, porque remove solo borra html, no en memoria. Con esto funciona lo de borra hasta la fila principal.
 
     }else{
         for (i = 1; i < arrayTabla.length; i++) {
@@ -217,3 +217,5 @@ botonEliminar.addEventListener("click", function(){
         }
     }
 });
+
+
