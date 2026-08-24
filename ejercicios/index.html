@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,125 +8,152 @@
     <link rel="stylesheet" href="/ejercicios/style.css">
     <title>Ejercicios</title>
 </head>
+
 <body>
 
-    <!-- Parte 3: Boostrap -->
+    <div class="jumbotron">
+        <h1 class="text-center">Ejercicios: JS y JQ</h1>
+    </div>
+
+    <!-- Parte 1 -->
     <div class="container">
+        <h2 class="text-center">Parte 1</h2>
+
+        <!-- Ejercicio 1 -->
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <input class="form-control" type="text" id="input-1">
+                <button class="btn btn-warning botonAlerta">
+                    Esto es el id del input
+                </button>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- Ejercicio 2 -->
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <h3 class="texto-h3 text-center">Cargando...</h3>
+                <button class="btn btn-primary abrir-h3">Tocar</button>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- Ejercicio 3 -->
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <input type="text" class="form-control input-2">
+
+                <div class="texto-2">
+
+                </div>
+
+                <input type="text" class="form-control input-3">
+
+                <div class="texto-3">
+
+                </div>
+
+                <input type="text" class="form-control input-4">
+
+                <div class="texto-4">
+
+                </div>
+
+                <button class="btn btn-info sumbit">Enviar</button>
+            </div>
+        </div>
+
+        <br>
+        <!-- Ejercicio 4 -->
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <select name="Ingresado" id="1" class="form-control select mb-2">
+                    <option value="Ingresado">Ingresado</option>
+                    <option value="Completado">Completado</option>
+                    <option value="Perdido">Perdido</option>
+                    <option value="Rechazado">Rechazado</option>
+                </select>
+
+                <div class="change-resultado">
+                    <input class="motivo form-control" type="text" placeholder="Ingrese el motivo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Parte 2 -->
+    <div class="container text-center">
+        <h2 class="text-center">Parte 2</h2>
+
+        <!-- Ejercicio 1 -->
+        <button class="btn btn-success agregar-fila">Agregar Fila</button>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Articulo</th>
+                    <th>Descripcion</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Importe</th>
+                    <th class="boton-eliminar"><button class="btn btn-danger">Eliminar</button></th>
+                </tr>
+            </thead>
+            <tbody class="cuerpo-tabla"></tbody>
+        </table>
+
+        <!-- Ejercicio 2 -->
+        <p>Forma 2: usando jQuery</p>
+        <button class="btn btn-success agregar-fila-VS">Agregar Fila</button>
+        <table id="tabla-id-VS" class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Articulo</th>
+                    <th>Descripcion</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Importe</th>
+                    <th><button class="btn btn-danger boton-eliminar-VS">Eliminar</button></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <!-- Parte 3 -->
+
+    <div class="container text-center">
+        <h2 class="text-center">Parte 3</h2>
+
         <form action="">
             <div class="row">
-                <input class="col-md-6" type="text" id="primerCampo">
-                <input class="col-md-6" type="text" id="segundoCampo">
+                <input class="col-md-6 form-control" type="text" id="primerCampo">
+                <input class="col-md-6 form-control" type="text" id="segundoCampo">
             </div>
 
             <div class="row">
                 <div class="col-md-12">
-                    <select class="" name="" id="">
-                        <option value="">Opc1</option>
-                        <option value="">Opc2</option>
-                        <option value="">Opc3</option>
+                    <select class="form-control" name="opciones" id="opciones">
+                        <option value="opcion1">Opción 1</option>
+                        <option value="opcion2">Opción 2</option>
+                        <option value="opcion3">Opción 3</option>
                     </select>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-md-12">
-                   <input class="" type="checkbox">
+                    <input type="checkbox" id="aceptar">
                 </div>
             </div>
         </form>
     </div>
 
-    <br><br>
-    <!-- Ejercicio 1 -->
-    <div class="">
-        <input type="text" id="input-1">
-        <button class="botonAlerta">Esto es el id del input</button>
-    </div>
-
-    <br><br>
-    <!-- Ejercicio 2 -->
-
-    <h3 class="texto-h3">Cargando...</h3>
-    <button class="abrir-h3">Tocar</button>
-
-    <br><br>
-
-    <!-- Ejercicio 3 -->
-    <input type="text" class="input-2">
-    <div class="texto-2"></div>
-
-    <input type="text" class="input-3">
-    <div class="texto-3"></div>
-
-    <input type="text" class="input-4">
-    <div class="texto-4"></div>
-
-    <button class="sumbit">Enviar</button>
-
-
-    <br><br>
-
-    <!-- Ejercicio 4 -->
-
-    <select name="Ingresado" id="1" class="select">
-        <option value="Ingresado">Ingresado</option>
-        <option value="Completado">Completado</option>
-        <option value="Perdido">Perdido</option>
-        <option value="Rechazado">Rechazado</option>        
-    </select>
-    <div class="change-resultado">
-        <input class="motivo" type="text" name="" id="" placeholder="Ingrese el motivo">
-    </div>
-
-
-    <!-- Parte 2 -->
-
-    <!-- Ejercicio 1-->
-    <br><br>
-    <button class="agregar-fila">Agregar Fila</button>
-    <table>
-        <thead>
-            <tr>
-                <th>Articulo</th>
-                <th>Descripcion</th>
-                <th>Cantidad</th>
-                <th>Precio</th>
-                <th>Importe</th>
-                <th class="boton-eliminar"><button>Eliminar</button></th>
-            </tr>
-        </thead>
-
-        <tbody class="cuerpo-tabla">
-
-        </tbody>
-    </table>
-
-    <!-- Forma 2: version simplificada -->
-    <br><br>
-    <p>Forma 2: usando jQuery</p>
-
-    <button class="agregar-fila-VS">Agregar Fila</button>
-
-    <table id="tabla-id-VS">
-        <thead>
-            <tr>
-                <th>Articulo</th>
-                <th>Descripcion</th>
-                <th>Cantidad</th>
-                <th>Precio</th>
-                <th>Importe</th>
-                <th>
-                    <button class="boton-eliminar-VS">Eliminar</button>
-                </th>
-            </tr>
-        </thead>
-
-        <tbody>
-        </tbody>
-    </table>
-
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
+
 </html>

@@ -1,9 +1,9 @@
 // Array Parte 4
 
 let articulos_bd = [
-    {codigo: 'ART100', descripcion: 'DESCRIPCION 100', precio: 100},
-    {codigo: 'ART200', descripcion: 'DESCRIPCION 200', precio: 200},
-    {codigo: 'ART200', descripcion: 'DESCRIPCION 300', precio: 300},
+    { codigo: 'ART100', descripcion: 'DESCRIPCION 100', precio: 100 },
+    { codigo: 'ART200', descripcion: 'DESCRIPCION 200', precio: 200 },
+    { codigo: 'ART200', descripcion: 'DESCRIPCION 300', precio: 300 },
 ];
 
 
@@ -13,21 +13,21 @@ let articulos_bd = [
 
 const primerCampo = document.querySelector("#primerCampo");
 
-primerCampo.addEventListener("input", function(){
+primerCampo.addEventListener("input", function () {
     primerCampo.value = primerCampo.value.toUpperCase();
 });
 
 const segundoCampo = document.querySelector("#segundoCampo");
 
 // Ejercicio 2
-segundoCampo.addEventListener("blur", function(){
+segundoCampo.addEventListener("blur", function () {
     segundoCampo.value = segundoCampo.value.trim().toLowerCase();
 });
 
 // Ejercicio 3
-segundoCampo.addEventListener("input", function(){
-    segundoCampo.value = segundoCampo.value.replaceAll("A","*");
-    segundoCampo.value = segundoCampo.value.replaceAll("a","*");
+segundoCampo.addEventListener("input", function () {
+    segundoCampo.value = segundoCampo.value.replaceAll("A", "*");
+    segundoCampo.value = segundoCampo.value.replaceAll("a", "*");
 });
 
 
@@ -35,7 +35,7 @@ segundoCampo.addEventListener("input", function(){
 
 const boton = document.querySelector(".botonAlerta");
 
-boton.addEventListener("click", function() {
+boton.addEventListener("click", function () {
     const input = document.querySelector("#input-1");
     alert("Este es el id del input: " + input.id);
 });
@@ -44,9 +44,9 @@ boton.addEventListener("click", function() {
 const buttonh3 = document.querySelector(".abrir-h3");
 const textoh3 = document.querySelector(".texto-h3");
 
-$(textoh3).hide();    
+$(textoh3).hide();
 
-buttonh3.addEventListener("click", function() {
+buttonh3.addEventListener("click", function () {
     $(textoh3).show();
     $(buttonh3).hide();
 });
@@ -67,17 +67,17 @@ const sumbit = document.querySelector(".sumbit");
 
 let resultado = "Campo obligatorio"
 
-sumbit.addEventListener("click", function() {
+sumbit.addEventListener("click", function () {
 
-    if(input2.value === ""){
-        div2.textContent = resultado    
+    if (input2.value === "") {
+        div2.textContent = resultado
     }
-    
-    if (input3.value === ""){
+
+    if (input3.value === "") {
         div3.textContent = resultado
     }
 
-    if (input4.value === ""){
+    if (input4.value === "") {
         div4.textContent = resultado
     }
 });
@@ -88,10 +88,10 @@ const select = document.querySelector(".select")
 
 $(".motivo").hide();
 
-select.addEventListener("change", function() {
-    if (select.value === "Perdido" || select.value === "Rechazado"){
+select.addEventListener("change", function () {
+    if (select.value === "Perdido" || select.value === "Rechazado") {
         $(".motivo").show();
-    }else{
+    } else {
         $(".motivo").hide();
     }
 });
@@ -106,7 +106,7 @@ select.addEventListener("change", function() {
 const agregarFila = document.querySelector(".agregar-fila");
 const cuerpoTabla = document.querySelector(".cuerpo-tabla");
 
-agregarFila.addEventListener("click", function() {
+agregarFila.addEventListener("click", function () {
 
     const crearFila = document.createElement("tr");
 
@@ -150,24 +150,25 @@ agregarFila.addEventListener("click", function() {
     const botonEliminar = document.createElement("button");
     botonEliminar.textContent = "Eliminar";
 
+
     celdaEliminar.append(botonEliminar);
     crearFila.append(celdaEliminar);
 
 
     // Ejercicio 3
-    botonEliminar.addEventListener("click", function(){
+    botonEliminar.addEventListener("click", function () {
         let respuesta = confirm('¿Queres borrar esta fila en particular?')
-        if(respuesta == true){
+        if (respuesta == true) {
             crearFila.remove();
         }
     });
 
     // Ejercicio 4    
-    inputCantidad.addEventListener('blur', function() {
+    inputCantidad.addEventListener('blur', function () {
         if (isNaN(inputPrecio.value) || isNaN(inputCantidad.value)) {
-        alert("Debes ingresar números");
-        
-        }else{
+            alert("Debes ingresar números");
+
+        } else {
             let ResultadoImporte = inputCantidad.value * inputPrecio.value
             inputImporte.value = ResultadoImporte;
         }
@@ -177,20 +178,20 @@ agregarFila.addEventListener("click", function() {
 
     let encontrado = false
 
-    inputArticulo.addEventListener('blur', function() {
-        for (i=0; i < articulos_bd.length; i++){
-            if(inputArticulo.value.trim().toUpperCase() == articulos_bd[i].codigo){
+    inputArticulo.addEventListener('blur', function () {
+        for (i = 0; i < articulos_bd.length; i++) {
+            if (inputArticulo.value.trim().toUpperCase() == articulos_bd[i].codigo) {
                 inputDescripcion.value = articulos_bd[i].descripcion;
                 inputPrecio.value = articulos_bd[i].precio;
                 encontrado = true;
             }
         }
-        if(encontrado === false){
+        if (encontrado === false) {
             alert("No existe el codigo ingresado")
         }
     });
 
-    
+
     // Agregar la fila completa
     cuerpoTabla.append(crearFila);
 
@@ -203,17 +204,17 @@ let arrayTabla = [];
 
 const botonEliminar = document.querySelector(".boton-eliminar");
 
-botonEliminar.addEventListener("click", function(){
+botonEliminar.addEventListener("click", function () {
     let respuesta = confirm("¿Queres borrar todas las filas (Aceptar) o todos menos la principal (Cancelar)?");
 
-    if(respuesta == true){
+    if (respuesta == true) {
         for (i = 0; i < arrayTabla.length; i++) {
             arrayTabla[i].remove();
         }
 
         arrayTabla = []; // Lo vuelvo a iniciarlizar vacio porque sino quedan elementos en el array, porque remove solo borra html, no en memoria. Con esto funciona lo de borra hasta la fila principal.
 
-    }else{
+    } else {
         for (i = 1; i < arrayTabla.length; i++) {
             arrayTabla[i].remove();
         }
@@ -227,7 +228,7 @@ botonEliminar.addEventListener("click", function(){
 const tablaVS = $("#tabla-id-VS");
 const agregarFilaVS = $(".agregar-fila-VS");
 
-agregarFilaVS.on("click", function() {
+agregarFilaVS.on("click", function () {
 
     $("#tabla-id-VS tbody").append(`
         <tr class="fila-articulo">
@@ -247,7 +248,7 @@ agregarFilaVS.on("click", function() {
                 <input class="input-importe">
             </td>
             <td>
-                <button class="boton-eliminar-fila">Eliminar</button>
+                <button class="btn btn-danger boton-eliminar-fila">Eliminar</button>
             </td>
         </tr>
     `);
