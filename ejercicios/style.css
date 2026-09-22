@@ -1,0 +1,44 @@
+.botonAlerta{
+    margin-top: 10px;
+}
+
+#input-1 {
+    transition: 0.1s;
+}
+
+p{
+    font-size: 20px;
+}
+
+.container{
+    margin-bottom: 30px;
+}
+
+table{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.texto-2,
+.texto-3,
+.texto-4{
+    min-height: 20px;
+    color: #a94442;
+}
+
+.change-resultado{
+    margin-top: 10px;
+}
+
+input{
+    margin-top: 10px;
+}
+
+select{
+    margin-top: 10px;
+}
+
+#aceptar{
+    width: 20px;
+    height: 20px;
+}
