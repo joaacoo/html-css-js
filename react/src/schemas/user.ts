@@ -9,3 +9,5 @@ export const userSchema = z.object({
     .string({ error: "Apellido requerido" })
     .min(3, { message: "Longitud minima 3" }),
 });
+
+export type userForm = z.infer<typeof userSchema>;

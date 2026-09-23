@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,291 +9,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<<<<<<< HEAD
-<body>
-
-    <!-- Navegaciones -->
-
-
-
-    <!-- Grupos de input -->
-    <div class="container-fluid">
-        <br>
-
-        <!-- 1. Input Group con texto (Addon) a la izquierda -->
-        <div class="form-group">
-            <div class="input-group">
-                <span class="input-group-addon">Correo</span>
-                <input type="text" class="form-control" placeholder="Escribe tu correo">
-            </div>
-        </div>
-
-        <!-- 2. Input Group con texto (Addon) a ambos lados (Ejemplo de precio con decimales) -->
-        <div class="form-group">
-            <div class="input-group">
-                <span class="input-group-addon">$</span>
-                <input type="text" class="form-control" placeholder="0.00">
-                <span class="input-group-addon">.00</span>
-            </div>
-        </div>
-
-        <!-- 3. Input Group con Checkbox dentro del Addon -->
-        <div class="form-group">
-            <div class="input-group">
-                <span class="input-group-addon">
-                    <input type="checkbox" aria-label="...">
-                </span>
-                <input type="text" class="form-control" placeholder="Input con checkbox">
-            </div>
-        </div>
-
-        <!-- 4. Input Group con Radio Button dentro del Addon -->
-        <div class="form-group">
-            <div class="input-group">
-                <span class="input-group-addon">
-                    <input type="radio" name="radioGroup1" aria-label="...">
-                </span>
-                <input type="text" class="form-control" placeholder="Input con radio button">
-            </div>
-        </div>
-
-        <!-- 5. Input Group con un Botón -->
-        <div class="form-group">
-            <div class="input-group">
-                <span class="input-group-btn">
-                    <button class="btn btn-primary" type="button">Buscar</button>
-                </span>
-                <input type="text" class="form-control" placeholder="Buscar para...">
-            </div>
-        </div>
-
-        <!-- 6. Input Group con un Botón Desplegable (Dropdown) -->
-        <div class="form-group">
-            <div class="input-group">
-                <div class="input-group-btn">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                        Acción <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Acción #1</a></li>
-                        <li><a href="#">Acción #2</a></li>
-                        <li><a href="#">Acción #3</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Acción separada</a></li>
-                    </ul>
-                </div>
-                <input type="text" class="form-control" placeholder="...">
-            </div>
-        </div>
-
-        <!-- 7. Input Group con Split Button Dropdown (Botón dividido con despliegue) -->
-        <div class="form-group">
-            <div class="input-group">
-                <div class="input-group-btn">
-                    <button type="button" class="btn btn-default">Acción</button>
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                        <span class="caret"></span>
-                        <span class="sr-only">Toggle Dropdown</span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Acción #1</a></li>
-                        <li><a href="#">Acción #2</a></li>
-                        <li><a href="#">Acción #3</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Acción separada</a></li>
-                    </ul>
-                </div>
-                <input type="text" class="form-control" placeholder="...">
-            </div>
-        </div>
-
-    </div>
-
-
-    <div class="container">
-    <!-- Dropdown estándar -->
-        <div class="btn-group">
-            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-                Botón de acción <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-            </ul>
-        </div>
-
-        <!-- Split Button Dropdown (Dropdown dividido en dos botones) -->
-        <div class="btn-group">
-            <!-- Primer botón con acción independiente -->
-            <button type="button" class="btn btn-default">Acción</button>
-            <!-- Segundo botón que activa el menú desplegable -->
-            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                <span class="caret"></span>
-                <span class="sr-only">Toggle Dropdown</span>
-            </button>
-            <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-            </ul>
-        </div>
-
-        <!-- Tamaños de Dropdown Buttons -->
-        <!-- Tamaño Grande (btn-lg) -->
-        <div class="btn-group">
-            <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                Botón Grande <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-            </ul>
-        </div>
-
-        <!-- Tamaño Estándar (Mediano) -->
-        <div class="btn-group">
-            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                Botón Estándar <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-            </ul>
-        </div>
-
-        <!-- Tamaño Pequeño (btn-sm) -->
-        <div class="btn-group">
-            <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                Botón Pequeño <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-            </ul>
-        </div>
-
-        <!-- Dropup (Menú desplegable hacia arriba) -->
-        <div class="btn-group dropup">
-        <br><br><br>
-            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                Dropup <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Grupo de botones -->
-    <div class="container">
-        <br>
-        <div class="btn-group btn-group-lg">
-            <button class="btn btn-default">Izquierda</button>
-            <button class="btn btn-default">Centro</button>
-            <button class="btn btn-default">Derecha</button>
-        </div>
-
-        <div class="btn-group btn-group-md">
-            <button class="btn btn-default">Izquierda</button>
-            <button class="btn btn-default">Centro</button>
-            <button class="btn btn-default">Derecha</button>
-        </div>
-
-        <br>
-        <div class="btn-group-vertical">
-        <br><br>
-            <button class="btn btn-default">Izquierda</button>
-            <button class="btn btn-default">Centro</button>
-            <button class="btn btn-default">Derecha</button>
-
-            <div class="btn-group-vertical">
-                <button class="btn btn-success dropdown-toggle" type="button" id="dropdownmenu1" data-toggle="dropdown" aria-expanded="true">
-                    <span class="caret"></span> Dropdown
-                </button>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownmenu1">
-                    <li role="presentation" class="dropdown-header">Encabezado</li>
-                    <li class="divider" class="item"></li>
-                    <li role="presentation"><a role="item" href="">1</a></li>
-                    <li role="presentation" class=""><a role="item" href="">2</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <br><br>
-        <div class="btn-group btn-group-justified">
-            <a href="" class="btn btn-default">1</a>
-            <a href="" class="btn btn-default">2</a>
-            <a href="" class="btn btn-default">3</a>
-        </div>
-    </div>
-
-    <!-- Dropdown -->
-    <div class="container">
-        <br>
-        <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownmenu1" data-toggle="dropdown" aria-expanded="true">
-                <span class="glyphicon glyphicon-menu-down"></span> Dropdown
-            </button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownmenu1">
-                <li role="presentation" class="dropdown-header">Encabezado</li>
-                <li class="divider" class="item"></li>
-                <li role="presentation"><a role="item" href="">#Item 1</a></li>
-                <li role="presentation" class="disabled"><a role="item" href="">#Item 2</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Iconos -->
-    <div class="container">
-        <h1> <span class="glyphicon glyphicon-adjust"></span> esto es un h1</h1>
-        <button class="btn btn-success"> <span class="glyphicon glyphicon-ok-sign"></span> Guardar</button>
-        <button class="btn btn-primary"><span class="glyphicon glyphicon-ok-sign"></span> Guardar</button>
-    </div>
-
-    <div class="container">
-        <h2>Utilidades Responsive</h2>
-
-        <!-- 1. Clases VISIBLE: Muestran el elemento solo en ciertos tamaños de pantalla -->
-        <div class="alert alert-success visible-lg">
-            Este mensaje solo es visible en pantallas grandes (lg).
-        </div>
-
-        <div class="alert alert-info visible-md">
-            Este mensaje solo es visible en pantallas medianas (md).
-        </div>
-
-        <!-- 2. Clases HIDDEN: Ocultan el elemento en determinados tamaños de pantalla -->
-        <div class="alert alert-warning hidden-xs hidden-sm">
-            Este elemento está oculto en dispositivos extra pequeños (xs) y pequeños (sm).
-        </div>
-
-        <!-- 3. Modificadores de visualización (block, inline, inline-block) con utilidades responsive -->
-        <!-- Un botón que solo es visible en tamaño mediano y se comporta como bloque (block) -->
-        <button type="button" class="btn btn-primary btn-block visible-lg-block">
-            Botón visible solo en mediano y grande (Bloque)
-        </button>
-
-        <!-- Un botón visible en tamaño mediano pero convertido a elemento en línea (inline) -->
-        <button type="button" class="btn btn-success visible-md-inline">
-            Botón visible solo en mediano (En línea)
-        </button>
-
-        <!-- 4. Clases para Impresión (Print Classes) -->
-        <!-- Este elemento se oculta al momento de imprimir (ctrl + p) la página web -->
-        <div class="well hidden-print">
-            <p>Este contenido no aparecerá cuando el usuario imprima la pagina.</p>
-        </div>
-
-        <!-- Este elemento SOLO aparece en el papel al imprimir (ctrl + p) -->
-        <div class="well visible-print-block">
-            <p>Este mensaje exclusivo solo sale impreso en el papel.</p>
-        </div>
-    </div>
-    
-=======
 <body data-spy="scroll" data-target="#navegacion">
 
 
@@ -303,7 +18,7 @@
 
         <div class="col-md-12">
             <div id="carrusel-1" class="carousel slide" data-ride="carousel">
-                
+
                 <!-- Indicadores (todos apuntan a #carrusel-1) -->
                 <ol class="carousel-indicators">
                     <li data-target="#carrusel-1" data-slide-to="0" class="active"></li>
@@ -313,10 +28,12 @@
 
                 <!-- Contenedor general de los slides (Abierto) -->
                 <div class="carousel-inner" role="listbox">
-                    
+
                     <!-- Slide 1 -->
                     <div class="item active">
-                        <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt="" width="1000" height="300">
+                        <img class="img-responsive"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s"
+                            alt="" width="1000" height="300">
                         <div class="carousel-caption hidden-xs hidden-sm">
                             <h3>Primer Slide #1</h3>
                             <p>Esta es la primera slide</p>
@@ -325,7 +42,9 @@
 
                     <!-- Slide 2 (Ahora está correctamente dentro de carousel-inner) -->
                     <div class="item">
-                        <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""  width="1000" height="300">
+                        <img class="img-responsive"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s"
+                            alt="" width="1000" height="300">
                         <div class="carousel-caption hidden-xs hidden-sm">
                             <h3>Slide #2</h3>
                             <p>Esta es la segunda slide</p>
@@ -334,7 +53,9 @@
 
                     <!-- Slide 3 (También adentro) -->
                     <div class="item">
-                        <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""  width="1000" height="300">
+                        <img class="img-responsive"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s"
+                            alt="" width="1000" height="300">
                         <div class="carousel-caption hidden-xs hidden-sm">
                             <h3>Slide #3</h3>
                             <p>Esta es la tercera slide</p>
@@ -397,18 +118,18 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Componenet collapse / acordeón -->
     <div class="container">
-    <br><br><br>
+        <br><br><br>
 
-    <!-- 1. COMPONENTE COLLAPSE SIMPLE -->
+        <!-- 1. COMPONENTE COLLAPSE SIMPLE -->
         <a href="#seccion" class="btn btn-primary" data-toggle="collapse"> Mostrar / Ocultar</a>
 
         <div class="collapse" id="seccion">
             <br>
             <div class="well">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Este es un contenido oculto que aparece al presionar el botón.
             </div>
         </div>
@@ -417,7 +138,7 @@
 
         <!-- 2. COMPONENTE ACORDEÓN -->
         <div class="panel-group" id="acordeon" role="tablist">
-            
+
             <!-- Panel 1 (Abierto por defecto) -->
             <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="heading1">
@@ -496,40 +217,43 @@
     <div class="container main">
         <div class="row">
             <div class="col-md-4">
-                
+
                 <!-- Sección 1 -->
                 <div id="seccion1" class="section">
                     <h2>Sección 1</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, reiciendis! Magnam, totam at!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, reiciendis! Magnam, totam
+                        at!</p>
                 </div>
 
                 <br>
                 <!-- Sección 2 -->
                 <div id="seccion2" class="section">
                     <h2>Sección 2</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, reiciendis! Magnam, totam at!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, reiciendis! Magnam, totam
+                        at!</p>
                 </div>
 
                 <!-- Sección 3 -->
                 <div id="seccion3" class="section">
                     <h2>Sección 3</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, reiciendis! Magnam, totam at!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, reiciendis! Magnam, totam
+                        at!</p>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Scripts (jQuery y Bootstrap JS) -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 
     <!-- Ventanas emergentes -->
     <div class="container">
-    <br>
+        <br>
         <a href="#ventana1" class="btn btn-primary btn-lg" data-toggle="modal">Boton #1</a>
         <a href="#ventana2" class="btn btn-success btn-lg" data-toggle="modal">Boton #2</a>
-       
+
         <div class="modal fade" id="ventana1">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -542,7 +266,9 @@
 
                     <!-- Contenido de la ventana -->
                     <div class="modal-body">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto velit iste maiores tenetur saepe nemo officia, molestiae alias earum ullam. Fugiat, laboriosam. Quod assumenda accusamus corporis corrupti explicabo voluptates aliquam.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto velit iste maiores tenetur
+                            saepe nemo officia, molestiae alias earum ullam. Fugiat, laboriosam. Quod assumenda
+                            accusamus corporis corrupti explicabo voluptates aliquam.</p>
                     </div>
 
                     <!-- Footer -->
@@ -566,7 +292,9 @@
 
                     <!-- Contenido de la ventana -->
                     <div class="modal-body">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto velit iste maiores tenetur saepe nemo officia, molestiae alias earum ullam. Fugiat, laboriosam. Quod assumenda accusamus corporis corrupti explicabo voluptates aliquam.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto velit iste maiores tenetur
+                            saepe nemo officia, molestiae alias earum ullam. Fugiat, laboriosam. Quod assumenda
+                            accusamus corporis corrupti explicabo voluptates aliquam.</p>
                     </div>
 
                     <!-- Footer -->
@@ -585,20 +313,28 @@
         <div class="row">
             <div class="col-md-5">
                 <div class="panel panel-default">
-                    <div class="panel-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga quos doloremque minus tempore numquam voluptates. Voluptatum adipisci quam quo excepturi esse voluptate in laborum eligendi, odit, alias expedita quibusdam debitis?</div>
+                    <div class="panel-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga quos
+                        doloremque minus tempore numquam voluptates. Voluptatum adipisci quam quo excepturi esse
+                        voluptate in laborum eligendi, odit, alias expedita quibusdam debitis?</div>
                 </div>
                 <div class="panel panel-default">
                     <div class="panel-heading">Encabezado</div>
-                        <div class="panel-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga quos doloremque minus tempore numquam voluptates. Voluptatum adipisci quam quo excepturi esse voluptate in laborum eligendi, odit, alias expedita quibusdam debitis?</div>
+                    <div class="panel-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga quos
+                        doloremque minus tempore numquam voluptates. Voluptatum adipisci quam quo excepturi esse
+                        voluptate in laborum eligendi, odit, alias expedita quibusdam debitis?</div>
                 </div>
 
                 <div class="panel panel-info">
-                    <div class="panel-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel sint dolorum odio. Rem maiores, magni temporibus deserunt perferendis, nisi sit, modi corporis quibusdam consequuntur commodi veniam iusto veritatis nobis quod?</div>
+                    <div class="panel-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel sint dolorum
+                        odio. Rem maiores, magni temporibus deserunt perferendis, nisi sit, modi corporis quibusdam
+                        consequuntur commodi veniam iusto veritatis nobis quod?</div>
                     <div class="panel-footer">Pie de pagina</div>
                 </div>
 
                 <div class="panel panel-primary">
-                    <div class="panel-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel sint dolorum odio. Rem maiores, magni temporibus deserunt perferendis, nisi sit, modi corporis quibusdam consequuntur commodi veniam iusto veritatis nobis quod?</div>
+                    <div class="panel-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel sint dolorum
+                        odio. Rem maiores, magni temporibus deserunt perferendis, nisi sit, modi corporis quibusdam
+                        consequuntur commodi veniam iusto veritatis nobis quod?</div>
                     <div class="panel-footer">Pie de pagina</div>
                 </div>
             </div>
@@ -606,17 +342,21 @@
     </div>
 
     <div class="container-fluid">
-    <br>
+        <br>
         <!-- Fila 1 -->
         <div class="row">
             <!-- 1. Ejemplo básico -->
             <div class="col-md-5">
                 <div class="media">
                     <div class="media-left">
-                        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""></a>
+                        <a href="#"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s"
+                                alt=""></a>
                     </div>
                     <div class="media-body">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nam corrupti iste aut sapiente, culpa asperiores cupiditate repellat quam commodi enim praesentium sunt modi quae dicta unde exercitationem consequatur eligendi?</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nam corrupti iste aut
+                            sapiente, culpa asperiores cupiditate repellat quam commodi enim praesentium sunt modi quae
+                            dicta unde exercitationem consequatur eligendi?</p>
                     </div>
                 </div>
             </div>
@@ -625,12 +365,20 @@
             <div class="col-md-5">
                 <div class="media">
                     <div class="media-left media-middle">
-                        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""></a>
+                        <a href="#"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s"
+                                alt=""></a>
                     </div>
                     <div class="media-body">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aliquam sit nemo et fuga? Quas sint pariatur sapiente corrupti dolores quaerat maiores ab accusantium nam. Tenetur laborum ex earum dolor.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nostrum harum ipsum? Excepturi vitae voluptas incidunt asperiores, placeat dignissimos corporis autem sequi minus, fuga impedit minima dolore. Nesciunt, iusto nam!</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nostrum harum ipsum? Excepturi vitae voluptas incidunt asperiores, placeat dignissimos corporis autem sequi minus, fuga impedit minima dolore. Nesciunt, iusto nam!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aliquam sit nemo et fuga?
+                            Quas sint pariatur sapiente corrupti dolores quaerat maiores ab accusantium nam. Tenetur
+                            laborum ex earum dolor.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nostrum harum ipsum? Excepturi
+                            vitae voluptas incidunt asperiores, placeat dignissimos corporis autem sequi minus, fuga
+                            impedit minima dolore. Nesciunt, iusto nam!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nostrum harum ipsum? Excepturi
+                            vitae voluptas incidunt asperiores, placeat dignissimos corporis autem sequi minus, fuga
+                            impedit minima dolore. Nesciunt, iusto nam!</p>
                     </div>
                 </div>
             </div>
@@ -644,12 +392,20 @@
             <div class="col-md-5">
                 <div class="media">
                     <div class="media-left media-bottom">
-                        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""></a>
+                        <a href="#"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s"
+                                alt=""></a>
                     </div>
                     <div class="media-body">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, atque ipsam, dolore quo asperiores possimus quae quis iusto dignissimos consectetur earum error saepe accusamus, corporis deserunt mollitia nihil! Sunt, eius.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, atque ipsam, dolore quo asperiores possimus quae quis iusto dignissimos consectetur earum error saepe accusamus, corporis deserunt mollitia nihil! Sunt, eius.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, atque ipsam, dolore quo asperiores possimus quae quis iusto dignissimos consectetur earum error saepe accusamus, corporis deserunt mollitia nihil! Sunt, eius.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, atque ipsam, dolore
+                            quo asperiores possimus quae quis iusto dignissimos consectetur earum error saepe accusamus,
+                            corporis deserunt mollitia nihil! Sunt, eius.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, atque ipsam, dolore
+                            quo asperiores possimus quae quis iusto dignissimos consectetur earum error saepe accusamus,
+                            corporis deserunt mollitia nihil! Sunt, eius.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, atque ipsam, dolore
+                            quo asperiores possimus quae quis iusto dignissimos consectetur earum error saepe accusamus,
+                            corporis deserunt mollitia nihil! Sunt, eius.</p>
                     </div>
                 </div>
             </div>
@@ -659,15 +415,21 @@
             <div class="col-md-5">
                 <div class="media">
                     <div class="media-left">
-                        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""></a>
+                        <a href="#"><img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s"
+                                alt=""></a>
                     </div>
                     <div class="media-body">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quidem dolorum inventore mollitia accusantium quisquam quaerat labore nisi voluptatibus, esse sit libero, neque id doloribus dolores quam provident vel ipsum!</p>
-                    
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quidem dolorum inventore
+                            mollitia accusantium quisquam quaerat labore nisi voluptatibus, esse sit libero, neque id
+                            doloribus dolores quam provident vel ipsum!</p>
+
                         <!-- El segundo media aca adentro del media-body -->
                         <div class="media">
                             <div class="media-left">
-                                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""></a>
+                                <a href="#"><img
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s"
+                                        alt=""></a>
                             </div>
                             <div class="media-body">
                                 <p>Esta es la respuesta al comentario.</p>
@@ -685,62 +447,68 @@
         <br>
         <div class="row">
             <div class="col-md-4">
-               <ul class="list-group">
+                <ul class="list-group">
                     <li class="list-group-item active">Lorem ipsum <span class="badge">7</span></li>
                     <li class="list-group-item">Lorem ipsum <span class="badge">10</span></li>
                     <li class="list-group-item">Lorem ipsum</li>
                     <li class="list-group-item">Lorem ipsum</li>
                     <li class="list-group-item">Lorem ipsum</li>
-               </ul> 
-            </div>         
+                </ul>
+            </div>
         </div>
 
         <div class="row">
             <div class="col-md-4">
-               <ul class="list-group">
+                <ul class="list-group">
                     <li class="list-group-item list-group-item-success">Lorem ipsum <span class="badge">10</span></li>
                     <li class="list-group-item list-roup-item-warning">Lorem ipsum</li>
                     <li class="list-group-item list-group-item-info">Lorem ipsum</li>
                     <li class="list-group-item list-group-item-danger">Lorem ipsum</li>
-               </ul> 
-            </div>         
+                </ul>
+            </div>
         </div>
 
         <div class="row">
             <div class="col-md-4">
-               <ul class="list-group">
+                <ul class="list-group">
                     <a href="#" class="list-group-item active">Lorem ipsum</a>
                     <a href="#" class="list-group-item disabled">Lorem ipsum</a>
                     <a href="#" class="list-group-item">Lorem ipsum</a>
-               </ul> 
-            </div>         
+                </ul>
+            </div>
         </div>
 
         <div class="row">
             <div class="col-md-4">
-               <ul class="list-group">
+                <ul class="list-group">
                     <a href="#" class="list-group-item active">Lorem ipsum
                         <h4> Encabezado </h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, quidem unde asperiores natus earum neque soluta vitae nam, excepturi cumque qui iusto odio maxime? Excepturi fuga delectus ipsam eligendi omnis?</p>
-                    </a>     
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, quidem unde asperiores natus
+                            earum neque soluta vitae nam, excepturi cumque qui iusto odio maxime? Excepturi fuga
+                            delectus ipsam eligendi omnis?</p>
+                    </a>
 
                     <a href="#" class="list-group-item">Lorem ipsum
                         <h4> Encabezado </h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, quidem unde asperiores natus earum neque soluta vitae nam, excepturi cumque qui iusto odio maxime? Excepturi fuga delectus ipsam eligendi omnis?</p>
-                    </a>   
-                    
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, quidem unde asperiores natus
+                            earum neque soluta vitae nam, excepturi cumque qui iusto odio maxime? Excepturi fuga
+                            delectus ipsam eligendi omnis?</p>
+                    </a>
+
                     <a href="#" class="list-group-item disabled">Lorem ipsum
                         <h4> Encabezado </h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, quidem unde asperiores natus earum neque soluta vitae nam, excepturi cumque qui iusto odio maxime? Excepturi fuga delectus ipsam eligendi omnis?</p>
-                    </a> 
-               </ul> 
-            </div>         
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, quidem unde asperiores natus
+                            earum neque soluta vitae nam, excepturi cumque qui iusto odio maxime? Excepturi fuga
+                            delectus ipsam eligendi omnis?</p>
+                    </a>
+                </ul>
+            </div>
         </div>
     </div>
 
     <!-- Barras de progreso -->
     <div class="container">
-        <br>     
+        <br>
 
         <!-- 1. Barra de progreso básica con porcentaje -->
         <h3>Barra básica</h3>
@@ -760,7 +528,7 @@
 
         <!-- 3. Barras de diferentes colores -->
         <h3>Barras de colores</h3>
-        
+
         <div class="progress">
             <div class="progress-bar progress-bar-success" role="progressbar" style="width: 40%;">
                 Success (Verde)
@@ -788,7 +556,8 @@
         <!-- 4. Barra con líneas y animación en movimiento -->
         <h3>Barra con líneas y animación (Striped + Active)</h3>
         <div class="progress">
-            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" style="width: 70%;">
+            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"
+                style="width: 70%;">
                 70% Animada
             </div>
         </div>
@@ -799,7 +568,8 @@
             <div class="progress-bar progress-bar-success" role="progressbar" style="width: 30%;">
                 30%
             </div>
-            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" style="width: 40%;">
+            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+                style="width: 40%;">
                 40%
             </div>
             <div class="progress-bar progress-bar-warning" role="progressbar" style="width: 20%;">
@@ -823,8 +593,8 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="alert alert-success">
-                    <button class="close" data-dismiss="alert"><span>&times;</span></button> 
-                    Esto es una <strong>alerta</strong> 
+                    <button class="close" data-dismiss="alert"><span>&times;</span></button>
+                    Esto es una <strong>alerta</strong>
                 </div>
             </div>
         </div>
@@ -832,47 +602,64 @@
 
     <!-- Miniaturas -->
     <div class="container">
-    <br>
+        <br>
         <div class="row">
-            <div class="col-xs-6 col-md-3"> 
-                <div class="thumbnail">    
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""></a>
+            <div class="col-xs-6 col-md-3">
+                <div class="thumbnail">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s"
+                        alt=""></a>
                     <div class="caption">
                         <h3>Titulo de la foto</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ut consequuntur dolorum nihil vel velit beatae omnis? Molestias possimus excepturi unde quasi quia optio, aspernatur laboriosam quibusdam reiciendis nesciunt pariatur.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ut consequuntur dolorum
+                            nihil vel velit beatae omnis? Molestias possimus excepturi unde quasi quia optio, aspernatur
+                            laboriosam quibusdam reiciendis nesciunt pariatur.</p>
                         <a href="#" class="btn btn-success">Leer mas</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""></a>
-            </div>
-            
-            <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""></a>
+                <a href="#" class="thumbnail"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s"
+                        alt=""></a>
             </div>
 
             <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""></a>
+                <a href="#" class="thumbnail"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s"
+                        alt=""></a>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s"
+                        alt=""></a>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-xs-6 col-md-3"> 
-                <a href="#" class="thumbnail"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""></a>
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s"
+                        alt=""></a>
             </div>
 
             <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""></a>
-            </div>
-            
-            <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""></a>
+                <a href="#" class="thumbnail"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s"
+                        alt=""></a>
             </div>
 
             <div class="col-xs-6 col-md-3">
-                <a href="#" class="thumbnail"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s" alt=""></a>
+                <a href="#" class="thumbnail"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s"
+                        alt=""></a>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+                <a href="#" class="thumbnail"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-8HppAD1T5-HU6uJYlmrP0YUgV87zIFucjOEezK0rhA&s"
+                        alt=""></a>
             </div>
         </div>
     </div>
@@ -888,7 +675,9 @@
             </div>
 
             <div class="col-md-12">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptates explicabo accusantium accusamus ratione aliquam alias veniam beatae minima blanditiis? In architecto perspiciatis labore cum vitae minus, laboriosam vero id?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptates explicabo accusantium
+                    accusamus ratione aliquam alias veniam beatae minima blanditiis? In architecto perspiciatis labore
+                    cum vitae minus, laboriosam vero id?</p>
             </div>
         </div>
     </div>
@@ -898,7 +687,9 @@
     <div class="jumbotron">
         <div class="container">
             <h1>Hola mundo!</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, reiciendis! Magnam, totam at! Ipsam iure autem repellendus saepe beatae officiis. Earum doloribus, eaque quam cumque alias ipsa aliquam iure laboriosam?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, reiciendis! Magnam, totam at! Ipsam
+                iure autem repellendus saepe beatae officiis. Earum doloribus, eaque quam cumque alias ipsa aliquam iure
+                laboriosam?</p>
             <p><a href="#" class="btn btn-primary">Leer mas</a></p>
         </div>
     </div>
@@ -913,7 +704,7 @@
         <ul class="nav nav-pills">
             <li class="active"><a href="#"> <span class="badge"> 54 </span> Inicio</a></li>
             <li><a href="#">Perfil</a></li>
-            <li><a href="#"> <span class="badge"> 14 </span>  Mensajes</a></li>
+            <li><a href="#"> <span class="badge"> 14 </span> Mensajes</a></li>
 
         </ul>
     </div>
@@ -979,18 +770,18 @@
         <nav>
             <ul class="pager">
                 <li class="previous">
-                <a href="#">&larr; Anterior</a>
+                    <a href="#">&larr; Anterior</a>
                 </li>
                 <li class="next">
-                <a href="#">Siguiente &rarr;</a>
+                    <a href="#">Siguiente &rarr;</a>
                 </li>
             </ul>
         </nav>
     </div>
-    
+
     <!-- Migas de pan: indican en qué parte del sitio estás y el camino hasta ella -->
     <!-- Inicio >> Categoria #1 >> Categoria #2 (donde estoy) -->
-    
+
     <div class="container-fluid">
         <br>
         <div class="col-md-4">
@@ -1023,7 +814,8 @@
                     <ul class="nav navbar-nav">
                         <li><a href="#">Item #1</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">
                                 Item #2 <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
@@ -1048,7 +840,8 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#">Item #5</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">
                                 Dropdown <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
@@ -1064,8 +857,7 @@
         </nav>
     </div>
 
->>>>>>> 1c9f4f53b90054fcc5d88e8bc5b5582277372b15
-    
+
     <div class="container">
         <h2>Clases auxiliares (Helper Classes)</h2>
 
@@ -1105,28 +897,32 @@
     </div>
 
     <br>
-    
+
     <!-- Imagenes -->
     <div class="container-fluid">
         <div class="row">
             <!-- Columna 1: Imagen adaptable (responsive) -->
             <div class="col-md-2">
-                <img src="https://copaargentina.s3.amazonaws.com/images/m117597_crop11015_2048x2048_proportional_17171065470437.jpg" class="img-responsive" alt="Imagen responsive" style="max-width: 200px;">
+                <img src="https://copaargentina.s3.amazonaws.com/images/m117597_crop11015_2048x2048_proportional_17171065470437.jpg"
+                    class="img-responsive" alt="Imagen responsive" style="max-width: 200px;">
             </div>
 
             <!-- Columna 2: Clases de estilo (esquinas redondeadas) -->
             <div class="col-md-2">
-                <img src="https://copaargentina.s3.amazonaws.com/images/m117597_crop11015_2048x2048_proportional_17171065470437.jpg" class="img-rounded" alt="Esquinas redondeadas" style="max-width: 200px;">
+                <img src="https://copaargentina.s3.amazonaws.com/images/m117597_crop11015_2048x2048_proportional_17171065470437.jpg"
+                    class="img-rounded" alt="Esquinas redondeadas" style="max-width: 200px;">
             </div>
 
             <!-- Columna 3: Imagen circular -->
             <div class="col-md-2">
-                <img src="https://copaargentina.s3.amazonaws.com/images/m117597_crop11015_2048x2048_proportional_17171065470437.jpg" class="img-circle" alt="Imagen circular" style="max-width: 200px;">
+                <img src="https://copaargentina.s3.amazonaws.com/images/m117597_crop11015_2048x2048_proportional_17171065470437.jpg"
+                    class="img-circle" alt="Imagen circular" style="max-width: 200px;">
             </div>
 
             <!-- Columna 4: Imagen miniatura con borde -->
             <div class="col-md-2">
-                <img src="https://copaargentina.s3.amazonaws.com/images/m117597_crop11015_2048x2048_proportional_17171065470437.jpg" class="img-thumbnail" alt="Imagen miniatura con borde" style="max-width: 200px;">
+                <img src="https://copaargentina.s3.amazonaws.com/images/m117597_crop11015_2048x2048_proportional_17171065470437.jpg"
+                    class="img-thumbnail" alt="Imagen miniatura con borde" style="max-width: 200px;">
             </div>
         </div>
     </div>
@@ -1168,7 +964,7 @@
     <!-- Tipos de formularios (Formulario horizontal / form-horizontal) -->
 
     <div class="container">
-    <br>
+        <br>
         <form action="" class="">
             <fieldset>
                 <!-- Campo con estado de éxito -->
@@ -1176,7 +972,7 @@
                     <label for="nombre">Nombre (Éxito):</label>
                     <input class="form-control" id="nombre" type="text" placeholder="Nombre:">
                 </div>
-                
+
                 <!-- Campo con estado de advertencia -->
                 <div class="form-group has-warning">
                     <label for="option">Elige una opción (Advertencia):</label>
@@ -1219,7 +1015,7 @@
     <br>
 
     <div class="container">
-    <br>
+        <br>
         <form action="" class="form-horizontal">
             <div class="form-group">
                 <label class="control-label col-md-2" for="nombre">Nombre:</label>
@@ -1262,11 +1058,11 @@
 
     <div class="container">
         <div class="table-responsive">
-             <table class="table table-bordered table-hover">
+            <table class="table table-bordered table-hover">
                 <tr class="active danger">
                     <th>#id</th>
                     <th>Nombre</th>
-                    <th>Usuario</th>        
+                    <th>Usuario</th>
                 </tr>
 
                 <tr class="">
@@ -1292,47 +1088,55 @@
 
 
     <div class="container-fluid">
-        <h1 class="text-muted"> Este es un header h1 <small>Texto secundario</small> </h1> 
-        <h2 class="text-primary"> Este es un header h2 <small>Texto secundario</small> </h2> 
-        <h3 class="text-muted"> Este es un header h3 <small>Texto secundario</small> </h3> 
-        <h4 class="text-info"> Este es un header h4 <small>Texto secundario</small> </h4> 
-        <h5 class="text-waring"> Este es un header h5 <small>Texto secundario</small></h5> 
-        <h6 class="text-danger"> Este es un header h6 <small>Texto secundario</small></h6> 
+        <h1 class="text-muted"> Este es un header h1 <small>Texto secundario</small> </h1>
+        <h2 class="text-primary"> Este es un header h2 <small>Texto secundario</small> </h2>
+        <h3 class="text-muted"> Este es un header h3 <small>Texto secundario</small> </h3>
+        <h4 class="text-info"> Este es un header h4 <small>Texto secundario</small> </h4>
+        <h5 class="text-waring"> Este es un header h5 <small>Texto secundario</small></h5>
+        <h6 class="text-danger"> Este es un header h6 <small>Texto secundario</small></h6>
 
-        <h1 class="bg-primary"> Este es un header h1 <small>Texto secundario</small> </h1> 
-        <h2 class="bg-success"> Este es un header h2 <small>Texto secundario</small> </h2> 
-        <h3 class="bg-info"> Este es un header h3 <small>Texto secundario</small> </h3> 
-        <h4 class="bg-waring"> Este es un header h4 <small>Texto secundario</small> </h4> 
-        <h5 class="bg-danger"> Este es un header h5 <small>Texto secundario</small> </h5> 
+        <h1 class="bg-primary"> Este es un header h1 <small>Texto secundario</small> </h1>
+        <h2 class="bg-success"> Este es un header h2 <small>Texto secundario</small> </h2>
+        <h3 class="bg-info"> Este es un header h3 <small>Texto secundario</small> </h3>
+        <h4 class="bg-waring"> Este es un header h4 <small>Texto secundario</small> </h4>
+        <h5 class="bg-danger"> Este es un header h5 <small>Texto secundario</small> </h5>
     </div>
 
-    <div class="container-fluid"> 
-        <p class="lead"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis adipisci, officia odio neque dolore voluptas mollitia, </p> 
+    <div class="container-fluid">
+        <p class="lead"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis adipisci, officia odio neque
+            dolore voluptas mollitia, </p>
 
-        <p> <s> Perspiciatis, qui? </s> </p> 
+        <p> <s> Perspiciatis, qui? </s> </p>
 
-        <p> <mark> magni, nemo ex nam quis ipsum est ducimus voluptatibus repellat excepturi. Perspiciatis, qui? </mark> </p> 
+        <p> <mark> magni, nemo ex nam quis ipsum est ducimus voluptatibus repellat excepturi. Perspiciatis, qui? </mark>
+        </p>
 
-        <p> <ins> magni, nemo ex nam quis ipsum est ducimus voluptatibus repellat excepturi. Perspiciatis, qui? </ins> </p>
+        <p> <ins> magni, nemo ex nam quis ipsum est ducimus voluptatibus repellat excepturi. Perspiciatis, qui? </ins>
+        </p>
 
         <p> <u> magni, nemo ex nam quis ipsum est ducimus voluptatibus repellat excepturi. Perspiciatis, qui? </u> </p>
 
-        <p> <strong> magni, nemo ex nam quis ipsum est ducimus voluptatibus repellat excepturi. Perspiciatis, qui? </strong> </p>
+        <p> <strong> magni, nemo ex nam quis ipsum est ducimus voluptatibus repellat excepturi. Perspiciatis, qui?
+            </strong> </p>
 
-        <p> <b> magni, nemo ex nam quis ipsum est ducimus voluptatibus repellat excepturi. Perspiciatis, qui? </b> </p> 
+        <p> <b> magni, nemo ex nam quis ipsum est ducimus voluptatibus repellat excepturi. Perspiciatis, qui? </b> </p>
 
-        <p> <em> magni, nemo ex nam quis ipsum est ducimus voluptatibus repellat excepturi. Perspiciatis, qui? </em> </p>
+        <p> <em> magni, nemo ex nam quis ipsum est ducimus voluptatibus repellat excepturi. Perspiciatis, qui? </em>
+        </p>
 
-        <p class="text-left"> Texto alineado a la izquierda </p> <p class="text-center"> Texto centrado </p> <p class="text-right"> Texto alineado a la derecha </p> 
+        <p class="text-left"> Texto alineado a la izquierda </p>
+        <p class="text-center"> Texto centrado </p>
+        <p class="text-right"> Texto alineado a la derecha </p>
 
-        <p class="text-justify"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis adipisci, officia odio neque dolore voluptas mollitia. </p> 
+        <p class="text-justify"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis adipisci, officia
+            odio neque dolore voluptas mollitia. </p>
 
         <p class="text-lowercase"> ESTE TEXTO SE CONVIERTE A MINÚSCULAS </p>
 
-        <p class="text-uppercase"> este texto se convierte a mayúsculas </p> 
-        
-        <p class="text-capitalize"> este texto convierte la primera letra de cada palabra </p> 
-    </div> 
+        <p class="text-uppercase"> este texto se convierte a mayúsculas </p>
+
+        <p class="text-capitalize"> este texto convierte la primera letra de cada palabra </p>
+    </div>
 
     <div class="row">
         <blockquote class="blockquote-reverse">
@@ -1343,8 +1147,11 @@
 
     <div class="col-md-4 text-right">
         <p class="text-capitalize">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius
-        <p class="impression"><code>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</code></p>
-        <p class="impression"><pre> laboris nisi ut aliquip ex ea commodo</pre></p>
+        <p class="impression"><code>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</code>
+        </p>
+        <p class="impression">
+        <pre> laboris nisi ut aliquip ex ea commodo</pre>
+        </p>
     </div>
 
     <br>
@@ -1352,17 +1159,21 @@
     <div class="container">
         <section class="row"> <!-- con row agregamos filas-->
 
-        <!-- col-xs = pantallas extra pequeñas | col-sm = pantallas pequeñas | col-md = pantallas medianas | col-lg = pantallas grandes -->
+            <!-- col-xs = pantallas extra pequeñas | col-sm = pantallas pequeñas | col-md = pantallas medianas | col-lg = pantallas grandes -->
             <article class="col-xs-12 col-sm-6 col-md-9 col-lg-9"> <!-- columna en pantalla mediana 6 -->
                 <p>
-                    <h3>articulo</h3>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore modi porro aspernatur distinctio assumenda accusamus sit soluta expedita, veritatis, aliquid repellat facilis. Maiores fugiat iusto perspiciatis fugit officiis adipisci cumque.
+                <h3>articulo</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore modi porro aspernatur distinctio
+                assumenda accusamus sit soluta expedita, veritatis, aliquid repellat facilis. Maiores fugiat iusto
+                perspiciatis fugit officiis adipisci cumque.
                 </p>
             </article>
             <aside class="col-xs-12 col-sm-6 col-md-3 col-lg-3"> <!-- columna en pantalla mediana 6, 6 + 6 = 12 -->
                 <p>
-                    <h3>aside</h3>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere mollitia incidunt blanditiis quos, qui magni quo minima nulla aspernatur eius nemo deserunt, numquam soluta ut debitis in maiores ad! Dignissimos.
+                <h3>aside</h3>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere mollitia incidunt blanditiis quos, qui
+                magni quo minima nulla aspernatur eius nemo deserunt, numquam soluta ut debitis in maiores ad!
+                Dignissimos.
                 </p>
             </aside>
         </section>
@@ -1372,47 +1183,53 @@
         <div class="row">
             <div class="col-md-3">
                 <h3>columna 3</h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sunt dignissimos saepe ex perspiciatis rerum id aut accusamus vitae suscipit distinctio molestias error repudiandae recusandae mollitia debitis natus, accusantium fugiat!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sunt dignissimos saepe ex perspiciatis
+                rerum id aut accusamus vitae suscipit distinctio molestias error repudiandae recusandae mollitia debitis
+                natus, accusantium fugiat!
             </div>
 
             <div class="color1 col-md-3">
                 <h3>columna 3</h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sunt dignissimos saepe ex perspiciatis rerum id aut accusamus vitae suscipit distinctio molestias error repudiandae recusandae mollitia debitis natus, accusantium fugiat!
-            </div>  
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sunt dignissimos saepe ex perspiciatis
+                rerum id aut accusamus vitae suscipit distinctio molestias error repudiandae recusandae mollitia debitis
+                natus, accusantium fugiat!
+            </div>
 
             <!-- offset = desplaza la columna hacia la derecha -->
 
             <div class="col-md-3 col-md-offset-3">
                 <h3>columna 3</h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sunt dignissimos saepe ex perspiciatis rerum id aut accusamus vitae suscipit distinctio molestias error repudiandae recusandae mollitia debitis natus, accusantium fugiat!
-            </div>  
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sunt dignissimos saepe ex perspiciatis
+                rerum id aut accusamus vitae suscipit distinctio molestias error repudiandae recusandae mollitia debitis
+                natus, accusantium fugiat!
+            </div>
 
-        <!--<div class="color1 col-md-3">
+            <!--<div class="color1 col-md-3">
                 <h3>columna 3</h3>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sunt dignissimos saepe ex perspiciatis rerum id aut accusamus vitae suscipit distinctio molestias error repudiandae recusandae mollitia debitis natus, accusantium fugiat!
             </div>  
         </div> -->
 
-        <!-- clearfix = limpia los floats (flotante) | visible-sm-block = se muestra/aplica en pantallas small -->
-        <!-- <div class="clearfix visible-sm-block"></div> -->
-    </div>
-
-    <footer>
-        <div class="container">
-            <h3>Joaquin De Luca</h3>
+            <!-- clearfix = limpia los floats (flotante) | visible-sm-block = se muestra/aplica en pantallas small -->
+            <!-- <div class="clearfix visible-sm-block"></div> -->
         </div>
-    </footer>
+
+        <footer>
+            <div class="container">
+                <h3>Joaquin De Luca</h3>
+            </div>
+        </footer>
 
 
-<<<<<<< HEAD
-    <!-- jQuery versión 1.12.4 (compatible con Bootstrap 3) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Bootstrap 3 JS -->
-=======
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Bootstrap 3 JavaScript -->
->>>>>>> 1c9f4f53b90054fcc5d88e8bc5b5582277372b15
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <<<<<<< HEAD <!-- jQuery versión 1.12.4 (compatible con Bootstrap 3) -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <!-- Bootstrap 3 JS -->
+            =======
+            <!-- jQuery -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <!-- Bootstrap 3 JavaScript -->
+            >>>>>>> 1c9f4f53b90054fcc5d88e8bc5b5582277372b15
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
+
 </html>

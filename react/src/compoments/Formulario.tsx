@@ -1,72 +1,29 @@
-import { useForm } from "react-hook-form";
-import { userSchema } from "../schemas/user";
-
-interface form {
-    name: string
-    lastName: string
-}
+import { FormProvider, useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { userSchema, userForm } from "../schemas/user";
+import Input from "./Input";
 
 function Formulario() {
     
-    const {
-        register,
-        handleSubmit,
-        formState: {errors}, 
-    } = useForm<form>();
+    const methods = useForm<userForm>({
+        resolver: zodResolver(userSchema),
+    });
 
-    const onSubmit = (data: form) => {
-        try {
-            const x = userSchema.parse(data);
-            console.log(x);
-        } catch (e) {
-            console.log(e);
-        }
+    const onSubmit = (data: userForm) => {
+        console.log(data);
     };
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="mb-3">
-                <label htmlFor="name" className="form-label">
-                    Nombre
-                </label>
+        <FormProvider {...methods}>
+            <form onSubmit={methods.handleSubmit(onSubmit)}>
+                <Input name="name">Nombre</Input>
+                <Input name="lastName">Apellido</Input>
 
-                <input {...register("name")}
-                    type="text"
-                    className="form-control"
-                    id="name"
-                />
-
-                {errors?.name && <p>{errors?.name?.message}</p>} 
-
-            </div>
-            <div className="mb-3">
-                <label htmlFor="lastName" className="form-label">
-                    Apellido
-                </label>
-
-                <input {...register("lastName")}
-                    type="text"
-                    className="form-control"
-                    id="lastName"
-                />
-            </div>
-
-            <div className="mb-3 form-check">
-                <input
-                    type="checkbox"
-                    className="form-check-input"
-                    id="exampleCheck1"
-                />
-
-                <label className="form-check-label" htmlFor="exampleCheck1">
-                    Verificar
-                </label>
-            </div>
-
-            <button type="submit" className="btn btn-primary">
-                Enviar
-            </button>
-        </form>
+                <button type="submit" className="btn btn-primary">
+                    Enviar
+                </button>
+                </form>
+        </FormProvider>  
     );
 }
 
